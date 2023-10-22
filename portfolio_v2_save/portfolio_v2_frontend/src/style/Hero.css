@@ -1,0 +1,56 @@
+.one {
+	display: grid;
+	place-content: center;
+	background: #E8EDDF;
+}
+
+div.mask {
+	overflow: hidden;
+}
+
+div.mask>h1 {
+	font-family: "Glamore", sans-serif;
+	font-size: 7vw;
+	margin: 0;
+	line-height: normal;
+}
+
+div.text-wrapper {
+	position: relative;
+	height: 5vw;
+	width: 100%;
+	overflow: hidden;
+}
+
+.text-wrapper>p {
+	position: absolute;
+	overflow: hidden;
+}
+
+.title {
+	font-size: 2vw;
+	text-transform: uppercase;
+}
+
+.title>span {
+	display: inline-block;
+}
+
+.fixed-title {
+	text-transform: uppercase;
+
+}
+
+.hide {
+	transform: translateY(-100%);
+	animation-name: slideDown;
+	animation-duration: 1.7s;
+	animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+	to {
+		transform: translateY(0);
+	}
+}

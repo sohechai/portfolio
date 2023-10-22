@@ -1,0 +1,107 @@
+.skills-container {
+	width: 100vw;
+	height: 80%;
+}
+
+.skills-container>h1 {
+	padding-left: 20px;
+	font-size: 24px;
+}
+
+
+.skills {
+	height: 100vh;
+}
+
+.row {
+	cursor: default;
+	position: relative;
+	padding: 50px 0 50px 20px;
+	overflow: hidden;
+	box-shadow: 0 -1px var(--border-color);
+}
+
+.row:last-child {
+	box-shadow: 0 1px var(--border-color), 0 -1px var(--border-color);
+}
+
+.item-menu {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	font-size: 100px;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 400;
+	font-size: clamp(1.953rem, 4vw, 3.052rem);
+	align-items: start;
+}
+
+.item-menu .numerotation {
+	font-size: 16px;
+	margin: 8px 8px 0 0;
+}
+
+.marquee {
+	position: absolute;
+	opacity: 0;
+	transform: translateY(-200%);
+	transition: transform 0.1s;
+}
+
+.row:hover .marquee {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 1;
+	transform: translateY(0);
+	white-space: nowrap;
+}
+
+.marquee-inner-wrap {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.marquee-inner {
+	height: 100%;
+	width: fit-content;
+	align-items: center;
+	display: flex;
+	position: relative;
+	animation: marquee 15s linear infinite;
+	will-change: transform;
+	overflow: hidden;
+}
+
+@keyframes marquee {
+	100% {
+		transform: translate3d(-50%, 0, 0);
+	}
+}
+
+.marquee span {
+	white-space: nowrap;
+	color: white;
+	font-size: 7vw;
+	line-height: 1.2;
+	font-weight: 600;
+	padding: 1vh 1vw 0;
+	text-transform: uppercase;
+}
+
+.marquee-img {
+	width: 15vw;
+	height: 70%;
+	margin: 0 2vw;
+	border-radius: 5vw;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-color: white;
+}

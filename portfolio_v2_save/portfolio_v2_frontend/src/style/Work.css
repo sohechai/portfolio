@@ -1,0 +1,11 @@
+.work-container {
+	height: 140vh;
+	background: var(--dark-bg-color);
+	border-radius: 24px;
+	margin-bottom: 20vh;
+	color: white;
+}
+
+.work-container > h1 {
+	color: white;
+}
