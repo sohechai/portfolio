@@ -17,6 +17,8 @@ function Skills() {
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_02.png')` }} />
 								<span>SQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_11.png')` }} />
+							</div>
+							<div className="marquee-inner">
 								<span>JAVASCRIPT</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_10.png')` }} />
 								<span>C/C++</span>
@@ -38,6 +40,8 @@ function Skills() {
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_15.png')` }} />
 								<span>REACT</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_16.png')` }} />
+							</div>
+							<div className="marquee-inner">
 								<span>HTML</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_08.png')` }} />
 								<span>CSS</span>
@@ -57,6 +61,8 @@ function Skills() {
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_04.png')` }} />
 								<span>NEST.JS</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_05.png')` }} />
+							</div>
+							<div className="marquee-inner">
 								<span>NODE.JS</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_04.png')` }} />
 								<span>NEST.JS</span>
@@ -76,6 +82,8 @@ function Skills() {
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_01.png')` }} />
 								<span>MONGODB</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_07.png')` }} />
+							</div>
+							<div className="marquee-inner">
 								<span>MYSQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_09.png')` }} />
 								<span>POSTGRESQL</span>
@@ -90,7 +98,19 @@ function Skills() {
 					<div className="item-menu"><span className='numerotation'>(05)</span>DEVELOPMENT TOOLS</div>
 					<div className="marquee">
 						<div className="marquee-inner-wrap">
-							<div className="marquee-inner">
+							<div className="marquee-inner-long">
+								<span>GITHUB</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_12.png')` }} />
+								<span>GITLAB</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_13.png')` }} />
+								<span>VSCODE</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_14.png')` }} />
+								<span>DOCKER</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_06.png')` }} />
+								<span>FIGMA</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_16.png')` }} />
+							</div>
+							<div className="marquee-inner-long">
 								<span>GITHUB</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_12.png')` }} />
 								<span>GITLAB</span>

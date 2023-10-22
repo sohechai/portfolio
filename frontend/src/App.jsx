@@ -1,8 +1,8 @@
 import React from 'react'
-import Hero from './Hero';
-import Skills from './Skills';
-import Work from './Work';
-import Contact from './Contact';
+import Hero from './hero';
+import Skills from './skills';
+import Work from './work';
+import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
 import { gsap } from 'gsap'
