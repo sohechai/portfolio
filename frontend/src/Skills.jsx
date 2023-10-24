@@ -10,21 +10,25 @@ function Skills() {
 					<div className="item-menu"><span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES</div>
 					<div className="marquee">
 						<div className="marquee-inner-wrap">
-							<div className="marquee-inner">
-								<span>JAVASCRIPT</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_10.png')` }} />
+							<div className="marquee-inner-long">
 								<span>C/C++</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_02.png')` }} />
 								<span>SQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_11.png')` }} />
+								<span>JAVASCRIPT</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_10.png')` }} />
+								<span>TYPESCRIPT</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_05.png')` }} />
 							</div>
-							<div className="marquee-inner">
-								<span>JAVASCRIPT</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_10.png')` }} />
+							<div className="marquee-inner-long">
 								<span>C/C++</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_02.png')` }} />
 								<span>SQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_11.png')` }} />
+								<span>JAVASCRIPT</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_10.png')` }} />
+								<span>TYPESCRIPT</span>
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_05.png')` }} />
 							</div>
 						</div>
 					</div>
@@ -60,13 +64,13 @@ function Skills() {
 								<span>NODE.JS</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_04.png')` }} />
 								<span>NEST.JS</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_05.png')` }} />
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_03.png')` }} />
 							</div>
 							<div className="marquee-inner">
 								<span>NODE.JS</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_04.png')` }} />
 								<span>NEST.JS</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_05.png')` }} />
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_03.png')` }} />
 							</div>
 						</div>
 					</div>
@@ -108,7 +112,7 @@ function Skills() {
 								<span>DOCKER</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_06.png')` }} />
 								<span>FIGMA</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_16.png')` }} />
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_17.png')` }} />
 							</div>
 							<div className="marquee-inner-long">
 								<span>GITHUB</span>
@@ -120,7 +124,7 @@ function Skills() {
 								<span>DOCKER</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_06.png')` }} />
 								<span>FIGMA</span>
-								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_16.png')` }} />
+								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_17.png')` }} />
 							</div>
 						</div>
 					</div>

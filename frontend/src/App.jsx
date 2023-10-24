@@ -52,7 +52,7 @@ function App() {
 		<div id="parent-container" className='container'>
 			<div className="navbar">
 				<div className="logo">
-					<h2>sofia hechaichi.</h2>
+					<h2>portfolio.</h2>
 				</div>
 				<h2>
 					<div className="menus">

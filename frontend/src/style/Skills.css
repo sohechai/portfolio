@@ -1,29 +1,29 @@
 .skills-container {
 	width: 100vw;
-	height: 80%;
+	height: 90%;
 }
 
 .skills-container>h1 {
-	padding-left: 20px;
-	font-size: 24px;
+	/* color: white; */
+	/* background-color: red; */
+	margin: 0 0 0px 20px;
+	font-size: 10vw;
 }
 
 .row {
-	cursor: default;
 	position: relative;
 	padding: 50px 0 50px 20px;
 	overflow: hidden;
-	box-shadow: 0 -1px var(--border-color);
+	box-shadow: 0 -1px var(--dark-grid-border-color);
 }
 
 .row:last-child {
-	box-shadow: 0 1px var(--border-color), 0 -1px var(--border-color);
+	box-shadow: 0 1px var(--dark-grid-border-color), 0 -1px var(--dark-grid-border-color);
 }
 
 .item-menu {
 	display: flex;
 	position: relative;
-	cursor: pointer;
 	font-size: 100px;
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-weight: 400;
@@ -40,7 +40,7 @@
 	position: absolute;
 	opacity: 0;
 	transform: translateY(-200%);
-	transition: transform 0.1s;
+	transition: transform 0.2s;
 }
 
 .row:hover .marquee {
@@ -51,7 +51,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background: black;
+	background: #000000;
 	opacity: 1;
 	transform: translateY(0);
 	white-space: nowrap;
@@ -84,12 +84,6 @@
 	animation: marquee 10s linear infinite;
 	overflow: hidden;
 }
-
-/* @keyframes marquee {
-	100% {
-		transform: translate3d(-50%, 0, 0);
-	}
-} */
 
 @keyframes marquee {
 	from {
