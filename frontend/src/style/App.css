@@ -82,8 +82,9 @@ div.navbar {
 }
 
 div.logo {
+	height: 80px;
+	position: absolute;
 	margin-left: 20px;
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -95,8 +96,11 @@ div.logo>h2 {
 }
 
 .menus {
+	position: absolute;
+	height: 80px;
+	right: 0;
+	top: 0;
 	pointer-events: stroke;
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -176,6 +180,12 @@ li a:hover:before {
 	height: 50px;
 	transition: width 0.5s, height 0.5s;
 }
+.inner-cursor.highlight {
+	/* background-color: orange; */
+	width: 200px;
+	height: 200px;
+	transition: width 0.5s, height 0.5s;
+}
 
 .outer-cursor {
 	opacity: 0;
@@ -193,7 +203,12 @@ li a:hover:before {
 }
 
 .outer-cursor.grow {
-	width: 50px;
-	height: 50px;
+	width: 4px;
+	height: 4px;
+	/* transition: width 0.5s, height 0.5s; */
+}
+.outer-cursor.highlight {
+	width: 4px;
+	height: 4px;
 	transition: width 0.5s, height 0.5s;
 }

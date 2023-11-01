@@ -30,7 +30,7 @@ function Contact() {
 
 			const circleCenterX = svgRect.width / 2;
 			const circleCenterY = svgRect.height / 2;
-			const circleRadius = svgRect.width / 2 - 20;
+			const circleRadius = svgRect.width / 2 - 25;
 
 			const angle = Math.atan2(mouseY - circleCenterY, mouseX - circleCenterX);
 			const x = circleCenterX + (circleRadius * Math.cos(angle));
@@ -52,10 +52,10 @@ function Contact() {
 			</h1>
 			<div className="contact-container">
 				<div className='text-container'>
-					<a href="mailto:sofia.hechaichi@gmail.com?subject=Let's work together !" className='text'>Mail</a>
+					<a href="mailto:sofia.hechaichi@gmail.com?subject=Let's work together !" className='text'>MAIL</a>
 				</div>
 				<div className='text-container'>
-					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>Linkedin</a>
+					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
 					<div className="svg-container">
 						<svg className="svg">
 							<g id="round">
@@ -78,8 +78,13 @@ function Contact() {
 							</g>
 						</svg>
 					</div>
-					<a href="https://github.com/sohechai" target="_blank" className='text'>Github</a>
+					<a href="" className='text'>RESUME</a>
+
 				</div>
+				<div className='text-container'>
+					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
+				</div>
+
 				{/* <div className="message-container">
 
 					<h1>
@@ -89,6 +94,9 @@ function Contact() {
 						experiences together!
 					</h1>
 				</div> */}
+			</div>
+			<div className="footer">
+				<p>Sofia Hechaïchi © 2023</p>
 			</div>
 		</section>
 	)

@@ -48,7 +48,7 @@
 	display: flex;
 	justify-content: center;
 	height: fit-content;
-	width: 110px;
+	width: 120px;
 }
 
 #svg {
@@ -59,14 +59,16 @@
 }
 
 .text {
-	font-size: 12vw;
+	font-size: 8vw;
 	font-weight: bolder;
-	/* line-height: fit-content; */
 	color: white;
-	/* height: fit-content; */
 	overflow: hidden;
-	text-transform: uppercase;
-	/* background-color: red; */
+	/* width: 30vw; */
+	text-align: center;
+}
+
+.text:nth-child(3) {
+	text-align: left;
 }
 
 .text-container {
@@ -76,6 +78,15 @@
 	overflow: hidden;
 }
 
-/* .contact h1 {
+.footer {
+	background-color: var(--dark-bg-color);
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer>p {
 	color: var(--bg-color);
-} */
+}

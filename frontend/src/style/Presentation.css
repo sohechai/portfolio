@@ -1,0 +1,15 @@
+.presentation-container {
+	/* background-color: red; */
+	/* height: 100px; */
+	overflow: hidden;
+}
+
+.presentation-text {
+	text-transform: uppercase;
+	font-size: 3vw;
+	background-color: white;
+	width: 90%;
+	padding: 5vw;
+	border-radius: 8px;
+	overflow: hidden;
+}

@@ -42,15 +42,11 @@ function Hero() {
 	}, []);
 
 	return (
-		<section className='one' id='home'>
+		<section className='hero-container' id='home'>
 			<div className="mask">
 				<p>fullstack developer <br/>+ UI/UX designer</p>
-				{/* <h1 className='hide'>SOfIA</h1> */}
-				<h1 className='hide'>SOFIA</h1>
+				<h1 className='hide' id='highlight'>SOFIA</h1>
 			</div>
-			{/* <div className="mask">
-				<h1 className='hide'>Sofia's PorTfoLIO</h1>
-			</div> */}
 			<div className="text-wrapper">
 				<p className='title'>passionate coder</p>
 				<p className='title'>dreamer</p>
