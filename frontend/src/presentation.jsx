@@ -2,32 +2,37 @@ import React, { useEffect, useRef } from 'react'
 import './style/Presentation.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from 'gsap/all';
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function Presentation() {
-	gsap.registerPlugin(ScrollTrigger);
 
-	const textRef = useRef(null);
-	useEffect(() => {
-		gsap.fromTo(
-			textRef.current,
-			{ opacity: 1 },
+	const slideInTop = (elem, delay, duration) => {
+		gsap.to(
+			elem,
 			{
-				opacity: 0,
-				duration: 1,
+				y: -50,
+				duration: 3,
+				ease: "none",
 				scrollTrigger: {
-					trigger: textRef.current,
-					start: 'top center',
-					end: 'center center',
+					trigger: elem,
+					start: "top bottom",
+					end: "bottom top",
 					scrub: true
 				}
 			}
-		);
-	}, []);
+		)
+	}
+
+	useEffect(() => {
+		slideInTop("#parallax-text");
+	}, [])
 
 	return (
 		<section className='presentation-container'>
-			<div className="presentation-text" >
-				<h1 className='parallax-text' ref={textRef}>
+			<div className='presentation-text' id='highlight'>
+				<h1 id='parallax-text'>
 					I specialize in crafting innovative web solutions,
 					blending creativity with code to bring digital visions
 					to life.

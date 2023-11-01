@@ -30,32 +30,32 @@ function Work() {
 			<h1>PROJECTS</h1>
 			<section className="card-grid">
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_10.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (01)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_02.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (02)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_03.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (03)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_04.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (04)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_05.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (05)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>
 				<div className="card">
-					<div className="card-img" style={{ backgroundImage: 'url("/src/images/picture_06.png")' }}></div>
+					<div className="card-img" style={{ backgroundImage: 'url("/src/images/project-image.png")' }}></div>
 					<h2 className="card-title">project (06)</h2>
 					<a href="#" className="card-link">see project page</a>
 				</div>

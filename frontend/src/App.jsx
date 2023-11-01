@@ -89,15 +89,13 @@ function App() {
 				</div>
 				<h2>
 					<div className="menus">
-						<ul>
-							<li><a href='#home'>home</a></li>
-							<li><a href='#work'>work</a></li>
-							<li><a href='#skills'>skills</a></li>
-							<li><a href='#contact'>contact</a></li>
-						</ul>
-					</div>
-				</h2>
-			{/* </div> */}
+						<a href='#home' id='mix'>home</a>
+						<a href='#work' id='mix'>work</a>
+						<a href='#skills' id='mix'>skills</a>
+						<a href='#contact' id='mix'>contact</a>
+					</div >
+				</h2 >
+			{/* </div > */}
 			<div className="inner-cursor"></div>
 			<div className="outer-cursor"></div>
 			<div className="opening" />
@@ -106,7 +104,7 @@ function App() {
 			<Work />
 			<Skills />
 			<Contact />
-		</div>
+		</div >
 	)
 }
 

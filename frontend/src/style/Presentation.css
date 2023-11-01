@@ -1,15 +1,34 @@
 .presentation-container {
 	/* background-color: red; */
-	/* height: 100px; */
+	align-items: start;
 	overflow: hidden;
 }
 
 .presentation-text {
-	text-transform: uppercase;
-	font-size: 3vw;
-	background-color: white;
-	width: 90%;
-	padding: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
 	border-radius: 8px;
 	overflow: hidden;
+	background-image: url('../images/text-bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* .presentation-text:hover {
+	border-radius: 20px !important;
+} */
+
+#parallax-text {
+	text-transform: uppercase;
+	height: fit-content;
+	font-size: 4vw;
+	width: 80vw;
+
+	padding: 4vw;
+	color: white;
+	transform: translateY(50px);
+	font-weight: 900;
+	/* mix-blend-mode: difference; */
 }
