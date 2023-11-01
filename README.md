@@ -11,7 +11,7 @@ This project is my second iteration of my personal portfolio, built with ReactJS
 
 ## Overview
 
-Welcome to Portfolio Version 2, an enhanced representation of my personal journey and work. This portfolio showcases my skills, projects, and experiences in an engaging and interactive way. It serves as a window to my creative world, inviting you to explore the work I'm passionate about.
+Welcome to my personnal portfolio, an enhanced representation of my personal journey and work. This portfolio showcases my skills, projects, and experiences in an engaging and interactive way. It serves as a window to my creative world, inviting you to explore the work I'm passionate about.
 
 ## Features
 
@@ -25,7 +25,7 @@ Welcome to Portfolio Version 2, an enhanced representation of my personal journe
 
 ## Link
 
-Explore my Portfolio Version 2 by visiting the live site:
+Explore my portfolio by visiting the live site:
 
 [Portfolio Version 2](https://yourportfoliolink.com)
 
