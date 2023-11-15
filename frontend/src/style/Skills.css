@@ -4,8 +4,6 @@
 }
 
 .skills-container>h1 {
-	/* color: white; */
-	/* background-color: red; */
 	margin: 0 0 0px 20px;
 	font-size: 10vw;
 }
@@ -75,6 +73,7 @@
 	animation: marquee 5s linear infinite;
 	overflow: hidden;
 }
+
 .marquee-inner-long {
 	height: 100%;
 	width: fit-content;
@@ -89,6 +88,7 @@
 	from {
 		transform: translateX(0);
 	}
+
 	to {
 		transform: translateX(-100%);
 	}

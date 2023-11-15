@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import './style/Presentation.css'
+import './style/App.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from 'gsap/all';
@@ -26,13 +27,13 @@ function Presentation() {
 	}
 
 	useEffect(() => {
-		slideInTop("#parallax-text");
+		slideInTop(".parallax-text");
 	}, [])
 
 	return (
-		<section className='presentation-container'>
+		<section className='presentation-container' id='highlight'>
 			<div className='presentation-text' id='highlight'>
-				<h1 id='parallax-text'>
+				<h1 className='parallax-text' id='highlight'>
 					I specialize in crafting innovative web solutions,
 					blending creativity with code to bring digital visions
 					to life.

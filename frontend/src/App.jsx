@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from './hero';
-import Skills from './skills';
-import Work from './work';
-import Contact from './contact';
+import Hero from './Hero';
+import Skills from './Skills';
+import Work from './Work';
+import Contact from './Contact';
 import { useEffect } from 'react';
 import './style/App.css'
 import { gsap } from 'gsap'
-import Presentation from './presentation';
+import Presentation from './Presentation';
 
 function App() {
 
@@ -83,9 +83,8 @@ function App() {
 
 	return (
 		<div id="parent-container" className='container'>
-			{/* <div className="navbar"> */}
 				<div className="logo">
-					<h2>portfolio.</h2>
+					<a href='#home' id='mix'>portfolio.</a>
 				</div>
 				<h2>
 					<div className="menus">
@@ -95,7 +94,6 @@ function App() {
 						<a href='#contact' id='mix'>contact</a>
 					</div >
 				</h2 >
-			{/* </div > */}
 			<div className="inner-cursor"></div>
 			<div className="outer-cursor"></div>
 			<div className="opening" />

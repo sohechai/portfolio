@@ -47,9 +47,11 @@ function Contact() {
 	}, []);
 	return (
 		<section className="contact" id='contact'>
-			<h1 className="contact-header">
-				LETS WORK TOGETHER
-			</h1>
+			<div className="contact-header">
+				<h1>
+					LETS WORK TOGETHER
+				</h1>
+			</div>
 			<div className="contact-container">
 				<div className='text-container'>
 					<a href="mailto:sofia.hechaichi@gmail.com?subject=Let's work together !" className='text'>MAIL</a>
@@ -84,20 +86,11 @@ function Contact() {
 				<div className='text-container'>
 					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
 				</div>
-
-				{/* <div className="message-container">
-
-					<h1>
-						I'm a passionate full-stack developer actively seeking new
-						career opportunities to build innovative and scalable web
-						applications. Let's collaborate and create amazing digital
-						experiences together!
-					</h1>
-				</div> */}
+				<div className="footer">
+					<p>Sofia Hechaïchi © 2023</p>
+				</div>
 			</div>
-			<div className="footer">
-				<p>Sofia Hechaïchi © 2023</p>
-			</div>
+
 		</section>
 	)
 }

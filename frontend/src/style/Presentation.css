@@ -1,5 +1,4 @@
 .presentation-container {
-	/* background-color: red; */
 	align-items: start;
 	overflow: hidden;
 }
@@ -16,19 +15,14 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-/* .presentation-text:hover {
-	border-radius: 20px !important;
-} */
 
-#parallax-text {
+.parallax-text {
 	text-transform: uppercase;
 	height: fit-content;
 	font-size: 4vw;
 	width: 80vw;
-
 	padding: 4vw;
 	color: white;
 	transform: translateY(50px);
 	font-weight: 900;
-	/* mix-blend-mode: difference; */
 }

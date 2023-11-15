@@ -13,27 +13,19 @@ div.mask {
 }
 
 div.mask>h1 {
-	/* font-family: "Cinzel Decorative", sans-serif; */
-	/* font-family: "Glamore", sans-serif; */
 	font-size: 16vw;
 	font-weight: 900;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	/* background-color: red; */
 }
 
 .mask>p {
-	/* font-family: "Glamore", sans-serif; */
 	color: rgba(1, 1, 1, 0.4);
 	text-align: center;
 	font-size: 24px;
-	/* border: 1px solid;
-	border-radius: 32px; */
 	width: fit-content;
 	padding: 8px 20px 8px 20px;
-	/* margin: 0; */
-	/* line-height: normal; */
 }
 
 div.text-wrapper {
