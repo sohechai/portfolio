@@ -47,11 +47,11 @@ function Contact() {
 	}, []);
 	return (
 		<section className="contact" id='contact'>
-			<div className="contact-header">
+			{/* <div className="contact-header">
 				<h1>
 					LETS WORK TOGETHER
 				</h1>
-			</div>
+			</div> */}
 			<div className="contact-container">
 				<div className='text-container'>
 					<a href="mailto:sofia.hechaichi@gmail.com?subject=Let's work together !" className='text'>MAIL</a>

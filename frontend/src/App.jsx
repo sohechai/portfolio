@@ -1,12 +1,13 @@
 import React from 'react'
-import Hero from './Hero';
-import Skills from './Skills';
-import Work from './Work';
-import Contact from './Contact';
+import Hero from './hero';
+import Skills from './skills';
+import Work from './work';
+import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
 import { gsap } from 'gsap'
-import Presentation from './Presentation';
+import Presentation from './presentation';
+import About from './About.jsx';
 
 function App() {
 
@@ -88,10 +89,10 @@ function App() {
 				</div>
 				<h2>
 					<div className="menus">
-						<a href='#home' id='mix'>home</a>
-						<a href='#work' id='mix'>work</a>
-						<a href='#skills' id='mix'>skills</a>
-						<a href='#contact' id='mix'>contact</a>
+						<a href='#about' id='mix'>ABOUT</a>
+						<a href='#work' id='mix'>PROJECTS</a>
+						<a href='#skills' id='mix'>SKILLS</a>
+						<a href='#contact' id='mix'>CONTACT</a>
 					</div >
 				</h2 >
 			<div className="inner-cursor"></div>
@@ -99,7 +100,8 @@ function App() {
 			<div className="opening" />
 			<Hero />
 			<Presentation />
-			<Work />
+			<About />
+			{/* <Work /> */}
 			<Skills />
 			<Contact />
 		</div >

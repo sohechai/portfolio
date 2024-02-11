@@ -58,6 +58,9 @@ body:hover .outer-cursor {
 
 .container {
     background: var(--bg-color);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .container-menu {
@@ -79,44 +82,44 @@ div.logo > a {
 .menus {
     position: fixed;
     z-index: 3;
-    right: 0;
+	bottom: 32px;
     display: flex;
-    margin: 20px 20px 0 0;
+    margin-left: 50%;
+	transform: translateX(-50%);
     justify-content: space-around;
-    gap: 48px;
-    color: white;
+	border-radius: 4px;
+	background: rgba(22, 22, 22, 0.55);
+	backdrop-filter: blur( 2.5px );
+	-webkit-backdrop-filter: blur( 2.5px );
+	border-radius: 10px;
+    color: var(--dark-bg-color);
     mix-blend-mode: difference;
+	font-size: 12px;
+	font-weight: 100;
+	letter-spacing: 1px;
 }
 
 .menus > a {
     position: relative;
-    color: white;
-    mix-blend-mode: difference;
+	color: white;
+	/* height: fit-content; */
+	/* background-color: red; */
+	/* border-radius: 10px; */
+	padding: 16px;
+}
+
+.menus > a:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menus > a:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .menus > a:hover {
-    mix-blend-mode: difference;
-    color: white;
-}
-
-.menus a:before {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    height: 3px;
-    background-color: black;
-    width: 100%;
-    transform: translateX(-107%);
-    transition: transform 0.5s;
-    mix-blend-mode: difference;
-    color: white;
-}
-
-.menus a:hover:before {
-    transform: translateX(0%);
-    mix-blend-mode: difference;
-    color: white;
+    /* background: rgba(22, 22, 22, 0.70); */
 }
 
 .top-right-border {

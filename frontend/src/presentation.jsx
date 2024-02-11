@@ -34,7 +34,7 @@ function Presentation() {
 		<section className='presentation-container' id='highlight'>
 			<div className='presentation-text' id='highlight'>
 				<h1 className='parallax-text' id='highlight'>
-					I specialize in crafting innovative web solutions,
+					I specialize in crafting innovative solutions,
 					blending creativity with code to bring digital visions
 					to life.
 					Let's embark on a journey together to create something amazing.

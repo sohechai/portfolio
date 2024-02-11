@@ -4,14 +4,21 @@
 }
 
 .contact {
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+	height: 100vh;
 	width: 100vw;
-	position: relative;
-	height: 110vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: end;
+	justify-content: center;
 	background-color: var(--dark-bg-color);
+}
+
+.contact > h2 {
+	color: white;
+	font-size: xx-large;
 }
 
 .contact-header {
@@ -46,7 +53,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 8vw;
+	/* padding: 8vw; */
 	width: 100vw;
 	background: var(--dark-bg-color);
 	color: var(--bg-color);
@@ -83,13 +90,14 @@
 }
 
 .footer {
-	height: 32px;
+	height: 24px;
+	font-size: 12px;
 	width: 100vw;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	display: flex;
 	justify-content: center;
-	align-items: end;
+	align-items: center;
 }
 
 .footer>p {
