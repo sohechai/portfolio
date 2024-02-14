@@ -3,7 +3,7 @@ import iconArrow from '../images/arrow.png';
 
 const AboutSection = ({ number, title, description, tag }) => {
 	const splitTag = tag.split(" ");
-	console.log(splitTag);
+
 	return (
 		<div className='about-left-component'>
 			<h2 className='about-number'>({number}) {title}</h2>

@@ -2,6 +2,8 @@
 	height: 400vh;
 	display: flex;
 	align-items: start;
+	background-color: var(--dark-bg-color);
+	justify-content: left;
 }
 
 .left {
@@ -11,7 +13,15 @@
 	align-items: end;
 	height: 100%;
 	width: 50%;
-	/* margin: 0 32px 0 32px; */
+}
+
+.about-container>h1 {
+	position: absolute;
+	color: var(--bg-color);
+	overflow: hidden;
+	margin: 8px 0 0 14px;
+	font-size: 10vw;
+	/* align-self: flex-start; */
 }
 
 .right {
@@ -29,6 +39,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
+	color: var(--bg-color);
 }
 
 .about-right-component {
@@ -48,6 +59,7 @@
 
 .about-number {
 	margin-bottom: 12px;
+	color: var(--bg-color);
 }
 
 .project-title {
@@ -61,6 +73,7 @@
 	font-size: 16px;
 	width: 95%;
 	margin-bottom: 12px;
+	color: var(--bg-color);
 }
 
 .tag {
@@ -72,8 +85,9 @@
 		font-size: 14px;
 		padding: 2px 8px; 
 		margin: 2px;
-		border: 0.5px solid black;
+		border: 0.5px solid var(--bg-color);
 		border-radius: 4px;
+		color: var(--bg-color);
 	}
 }
 
@@ -81,10 +95,12 @@
 	/* padding: 8px; */
 	border: none;
 	margin-right: 12px;
+	color: var(--bg-color);
 
 	>img {
 		margin-right: 8px;
 		height: 8px;
+		color: var(--bg-color);
 	}
 }
 
