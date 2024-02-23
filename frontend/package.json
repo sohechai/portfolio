@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.15.16",
+    "@studio-freight/react-lenis": "^0.0.44",
+    "@types/three": "^0.161.2",
     "gsap": "^3.12.1",
+    "gsap-trial": "^3.12.5",
     "imagesloaded": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.63.4"
+    "sass": "^1.63.4",
+    "three": "^0.161.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

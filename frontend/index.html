@@ -10,6 +10,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Sofia Hechaichi</title>
 </head>
+<style>
+	html.lenis {
+		height: auto;
+	}
+
+	.lenis.lenis-smooth {
+		scroll-behavior: auto;
+	}
+
+	.lenis.lenis-smooth [data-lenis-prevent] {
+		overscroll-behavior: contain;
+	}
+
+	.lenis.lenis-stopped {
+		overflow: hidden;
+	}
+</style>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+<!-- <script>
+
+	const lenis = new Lenis({
+		lerp: 0.05,
+		wheelMultiplier: 1,
+	});
+
+	function raf(time) {
+		lenis.raf(time);
+		requestAnimationFrame(raf);
+	}
+	requestAnimationFrame(raf);
+
+</script> -->
 
 <body>
 	<div id="root"></div>

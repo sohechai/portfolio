@@ -3,11 +3,27 @@ import './style/Hero.css'
 import gsap from 'gsap';
 
 function Hero() {
+	const heroTransition = (elem) => {
+		gsap.to(
+			elem,
+			{
+				opacity: 0,
+				duration: 3,
+				ease: "none",
+				scrollTrigger: {
+					trigger: elem,
+					start: "top top",
+					end: "center",
+					scrub: true,
+				}
+			}
+		)
+	}
 	useEffect(() => {
 		const titles = gsap.utils.toArray('.title');
-		const tl = gsap.timeline({repeat: -1});
+		const tl = gsap.timeline({ repeat: -1 });
 
-		titles.forEach(title=> {
+		titles.forEach(title => {
 			const wordContainer = new Array;
 			title.innerText.split('').map(word => {
 				let span = document.createElement('span');
@@ -39,13 +55,15 @@ function Hero() {
 					stagger: .01,
 				}, "<2")
 		});
+		heroTransition(".hero-container");
+		
 	}, []);
 
 	return (
 		<section className='hero-container' id='home'>
 			<div className="mask">
-				<p>fullstack developer <br/>+ UI/UX designer</p>
-				<h1 className='hide' id='highlight'>SOFIA</h1>
+				<p>fullstack developer <br />+ UI/UX designer</p>
+				<h1 className='name' id='highlight'>SOFIA</h1>
 			</div>
 			<div className="text-wrapper">
 				<p className='title'>passionate coder</p>

@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function Presentation() {
 
-	const slideInTop = (elem, delay, duration) => {
+	const slideInTop = (elem) => {
 		gsap.to(
 			elem,
 			{

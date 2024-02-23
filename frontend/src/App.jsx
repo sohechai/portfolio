@@ -1,13 +1,16 @@
 import React from 'react'
 import Hero from './hero';
 import Skills from './skills';
-import Work from './work';
+// import Work from './Work_old.jsx';
 import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
 import { gsap } from 'gsap'
 import Presentation from './presentation';
-import About from './About.jsx';
+import Work from './Work.jsx';
+import Torus from './Torus.jsx';
+import * as THREE from 'three';
+import { Canvas } from '@react-three/fiber';
 
 function App() {
 
@@ -84,24 +87,41 @@ function App() {
 
 	return (
 		<div id="parent-container" className='container'>
+			<div className="header">
 				<div className="logo">
 					<a href='#home' id='mix'>portfolio.</a>
 				</div>
-				<h2>
-					<div className="menus">
-						<a href='#about' id='mix'>ABOUT</a>
-						<a href='#work' id='mix'>PROJECTS</a>
-						<a href='#skills' id='mix'>SKILLS</a>
-						<a href='#contact' id='mix'>CONTACT</a>
-					</div >
-				</h2 >
+				<div className="image"></div>
+			</div>
+
+			<h2>
+				<div className="menus">
+					<a href='#about' id='mix'>ABOUT</a>
+					<a href='#work' id='mix'>PROJECTS</a>
+					<a href='#skills' id='mix'>SKILLS</a>
+					<a href='#contact' id='mix'>CONTACT</a>
+				</div >
+			</h2 >
 			<div className="inner-cursor"></div>
 			<div className="outer-cursor"></div>
 			<div className="opening" />
 			<Hero />
 			<Presentation />
-			<About />
-			{/* <Work /> */}
+			<section>
+				<Canvas gl={{
+					antialias: true,
+					toneMapping: THREE.ACESFilmicToneMapping,
+					outputEncoding: THREE.sRGBEncoding
+				}}
+				>
+					<Torus />
+				</Canvas>
+			</section>
+			<section className='work-header'>
+				<h1>RECENT PROJECTS</h1>
+			</section>
+			<Work />
+			<section></section>
 			<Skills />
 			<Contact />
 		</div >

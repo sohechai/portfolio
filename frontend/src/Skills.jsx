@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './style/Skills.css'
 
 function Skills() {
+
+
 	return (
 		<section className='skills' id='skills'>
 			<div className="skills-container">
 				<h1>SKILLS</h1>
-				<div className="row">
-					<div className="item-menu"><span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES</div>
-					<div className="marquee">
+				<div className="row" >
+					<div className="item-menu">
+						<span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES</div>
+					<div className='marquee'  >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner-long">
 								<span>C/C++</span>
@@ -33,9 +36,9 @@ function Skills() {
 						</div>
 					</div>
 				</div>
-				<div className="row">
+				<div className="row" >
 					<div className="item-menu"><span className='numerotation'>(02)</span>FRONTEND</div>
-					<div className="marquee">
+					<div className='marquee' >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner">
 								<span>HTML</span>
@@ -56,9 +59,9 @@ function Skills() {
 						</div>
 					</div>
 				</div>
-				<div className="row">
+				<div className="row" >
 					<div className="item-menu"><span className='numerotation'>(03)</span>BACKEND</div>
-					<div className="marquee">
+					<div className='marquee' >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner">
 								<span>NODE.JS</span>
@@ -75,11 +78,11 @@ function Skills() {
 						</div>
 					</div>
 				</div>
-				<div className="row">
+				<div className="row" >
 					<div className="item-menu"><span className='numerotation'>(04)</span>DATABASE</div>
-					<div className="marquee">
+					<div className='marquee' >
 						<div className="marquee-inner-wrap">
-							<div className="marquee-inner">
+							<div className="marquee-inner-long">
 								<span>MYSQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_09.png')` }} />
 								<span>POSTGRESQL</span>
@@ -87,7 +90,7 @@ function Skills() {
 								<span>MONGODB</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_07.png')` }} />
 							</div>
-							<div className="marquee-inner">
+							<div className="marquee-inner-long">
 								<span>MYSQL</span>
 								<div className="marquee-img" style={{ backgroundImage: `url('/src/images/picture_09.png')` }} />
 								<span>POSTGRESQL</span>
@@ -98,9 +101,9 @@ function Skills() {
 						</div>
 					</div>
 				</div>
-				<div className="row">
+				<div className="row" >
 					<div className="item-menu"><span className='numerotation'>(05)</span>DEVELOPMENT TOOLS</div>
-					<div className="marquee">
+					<div className='marquee' >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner-long">
 								<span>GITHUB</span>
@@ -130,7 +133,10 @@ function Skills() {
 					</div>
 				</div>
 			</div>
-		</section>
+			<div className='bottom-skills' >
+				<h1 id='contact'>LET'S TALK</h1>
+			</div>
+		</section >
 	)
 }
 

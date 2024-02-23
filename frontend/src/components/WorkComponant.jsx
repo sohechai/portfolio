@@ -1,12 +1,12 @@
 import React from 'react';
 import iconArrow from '../images/arrow.png';
 
-const AboutSection = ({ number, title, description, tag }) => {
+const WorkSection = ({ number, title, description, tag }) => {
 	const splitTag = tag.split(" ");
 
 	return (
-		<div className='about-left-component'>
-			<h2 className='about-number'>({number}) {title}</h2>
+		<div className='work-left-component'>
+			<h2 className='work-number'>({number}) {title}</h2>
 			<p className='project-description'>{description}</p>
 			<div className="button-container">
 				<a className='project-button'><img src={iconArrow} alt="Go to project" />Visit website</a>
@@ -22,4 +22,4 @@ const AboutSection = ({ number, title, description, tag }) => {
 	);
 };
 
-export default AboutSection;
+export default WorkSection;

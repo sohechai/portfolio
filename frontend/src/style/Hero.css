@@ -54,7 +54,7 @@ div.text-wrapper {
 
 }
 
-.hide {
+.name {
 	transform: translateY(-100%);
 	animation-name: slideDown;
 	animation-duration: 1s;

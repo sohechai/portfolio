@@ -1,6 +1,8 @@
 .skills {
 	margin-bottom: 100vh;
-	height: 150vh;
+	height: 130vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .skills-container {
@@ -11,6 +13,20 @@
 .skills-container>h1 {
 	margin: 0 0 0px 20px;
 	font-size: 10vw;
+}
+
+.bottom-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+
+.bottom-skills>h1 {
+	font-size: 10vw;
+	line-height: 0.9;
+	/* Add this line */
 }
 
 .row {
@@ -42,8 +58,6 @@
 .marquee {
 	position: absolute;
 	opacity: 0;
-	transform: translateY(-200%);
-	transition: transform 0.2s;
 }
 
 .row:hover .marquee {
@@ -54,7 +68,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background: #000000;
+	background: #1c1b1b;
 	opacity: 1;
 	transform: translateY(0);
 	white-space: nowrap;
@@ -78,6 +92,7 @@
 	animation: marquee 5s linear infinite;
 	overflow: hidden;
 }
+
 
 .marquee-inner-long {
 	height: 100%;

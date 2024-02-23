@@ -46,7 +46,7 @@ function Contact() {
 		};
 	}, []);
 	return (
-		<section className="contact" id='contact'>
+		<section className="contact" >
 			{/* <div className="contact-header">
 				<h1>
 					LETS WORK TOGETHER

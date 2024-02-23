@@ -1,6 +1,7 @@
 .presentation-container {
 	align-items: start;
 	overflow: hidden;
+	height: 100vh;
 }
 
 .presentation-text {
@@ -25,4 +26,24 @@
 	color: white;
 	transform: translateY(50px);
 	font-weight: 900;
+}
+
+.test {
+	padding: 15px;
+	/* background-color: red; */
+	height: 100%;
+	width: 100%;
+	font-size: fit-content;
+	display: flex;
+	/* text-align: center; */
+}
+
+.test>h1{
+	font-size: 8vw;
+	text-transform: uppercase;
+}
+
+.test>h1>span {
+	background-color: lightblue;
+	padding: 0 100px 0 100px;
 }
