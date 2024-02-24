@@ -72,7 +72,7 @@ function Contact() {
 					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
 				</div>
 				<div className="footer">
-					<p>Sofia Hechaïchi © 2023</p>
+					<p>Sofia Hechaïchi © 2024</p>
 				</div>
 			</div>
 
