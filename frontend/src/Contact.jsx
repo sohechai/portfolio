@@ -5,21 +5,10 @@ import { useEffect } from 'react'
 function Contact() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-
-	// useEffect(() => {
-	// const svg = document.querySelector("#svg");
-	// const mouse = svg.createSVGPoint();
-
-	// const outerCircle = createEye("#outer-circle");
-
-	// let requestId = null;
-
-	// window.addEventListener("mousemove", onmousemove);
-
-	// function onFrame() {
-	// 	let point = mouse.matrixTransform(svg, getScreenCTM().inverse());
-	// }
-	// }, [])
+	const copyMail = (e) => {
+		const email = 'sofia.hechaichi@gmail.com';
+		navigator.clipboard.writeText(email);
+	}
 
 	useEffect(() => {
 		function handleMouseMove(e) {
@@ -45,16 +34,12 @@ function Contact() {
 			window.removeEventListener('mousemove', handleMouseMove);
 		};
 	}, []);
+
 	return (
 		<section className="contact" >
-			{/* <div className="contact-header">
-				<h1>
-					LETS WORK TOGETHER
-				</h1>
-			</div> */}
 			<div className="contact-container">
 				<div className='text-container'>
-					<a href="mailto:sofia.hechaichi@gmail.com?subject=Let's work together !" className='text'>MAIL</a>
+					<a className='text' onClick={copyMail}>MAIL</a>
 				</div>
 				<div className='text-container'>
 					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>

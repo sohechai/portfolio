@@ -155,8 +155,8 @@ div.logo > a {
     z-index: 10000;
     position: fixed;
     left: 10px;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     transform: translate(-50%, -50%);
     background-color: white;
     mix-blend-mode: difference;

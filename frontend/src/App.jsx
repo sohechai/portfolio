@@ -1,16 +1,13 @@
 import React from 'react'
 import Hero from './hero';
 import Skills from './skills';
-// import Work from './Work_old.jsx';
 import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
 import { gsap } from 'gsap'
 import Presentation from './presentation';
 import Work from './Work.jsx';
-import Torus from './Torus.jsx';
-import * as THREE from 'three';
-import { Canvas } from '@react-three/fiber';
+import Scene from './Scene.jsx';
 
 function App() {
 
@@ -107,16 +104,9 @@ function App() {
 			<div className="opening" />
 			<Hero />
 			<Presentation />
-			<section>
-				<Canvas gl={{
-					antialias: true,
-					toneMapping: THREE.ACESFilmicToneMapping,
-					outputEncoding: THREE.sRGBEncoding
-				}}
-				>
-					<Torus />
-				</Canvas>
-			</section>
+			{/* <section>
+				<Scene />
+			</section> */}
 			<section className='work-header'>
 				<h1>RECENT PROJECTS</h1>
 			</section>
