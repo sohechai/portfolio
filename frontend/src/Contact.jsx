@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './style/Contact.css'
 import { useEffect } from 'react'
+import Magnetic from './components/Magnetic'
 
 function Contact() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -39,10 +40,14 @@ function Contact() {
 		<section className="contact" >
 			<div className="contact-container">
 				<div className='text-container'>
-					<a className='text' onClick={copyMail}>MAIL</a>
+					<Magnetic>
+						<a className='text' onClick={copyMail}>MAIL</a>
+					</Magnetic>
 				</div>
 				<div className='text-container'>
-					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
+					<Magnetic>
+						<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
+					</Magnetic>
 					<div className="svg-container">
 						<svg className="svg">
 							<g id="round">
@@ -65,11 +70,15 @@ function Contact() {
 							</g>
 						</svg>
 					</div>
-					<a href="" className='text'>RESUME</a>
+					<Magnetic>
+						<a href="" className='text'>RESUME</a>
+					</Magnetic>
 
 				</div>
 				<div className='text-container'>
+					<Magnetic>
 					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
+					</Magnetic>
 				</div>
 				<div className="footer">
 					<p>Sofia Hechaïchi © 2024</p>

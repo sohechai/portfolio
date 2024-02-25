@@ -1,112 +1,178 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Hero from './hero';
 import Skills from './skills';
 import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
+import { animate, motion, useMotionValue } from "framer-motion"
 import { gsap } from 'gsap'
 import Presentation from './presentation';
 import Work from './Work.jsx';
 import Scene from './Scene.jsx';
+import Magnetic from './components/Magnetic.jsx';
 
 function App() {
+	const aboutRef = useRef(null);
+	const projectsRef = useRef(null);
+	const skillsRef = useRef(null);
+	const contactRef = useRef(null);
+	const boundRef = useRef(null);
+	const homeRef = useRef(null);
+	const squareRef = useRef(null);
+	const [hoveredLink, setHoveredLink] = useState(null);
+	const [hoveredLogo, setHoveredLogo] = useState(null);
+	const [hoveredSquare, setHoveredSquare] = useState(null);
+	const cursorSize = hoveredLink ? 84 : 10;
+
+	const mousePosition = {
+		x: useMotionValue(0),
+		y: useMotionValue(0)
+	}
+
+	const scale = {
+		x: useMotionValue(1),
+		y: useMotionValue(1)
+	}
+
+	const mouseMove = (e) => {
+		const { clientX, clientY } = e;
+		let innerCursor = document.querySelector('.inner-cursor');
+
+		if (hoveredLink) {
+			const { left, top, width, height } = hoveredLink.current.getBoundingClientRect();
+			const center = { x: left + width / 4.9, y: top };
+			const distance = { x: clientX - center.x, y: clientY - center.y }
+
+			mousePosition.x.set(center.x + (distance.x * 0.1));
+			mousePosition.y.set(center.y + (distance.y * 0.1));
+			innerCursor.classList.add("grow");
+		}
+		else if (hoveredLogo) {
+			const { left, top, width, height } = hoveredLogo.current.getBoundingClientRect();
+			const center = { x: left + width / 8, y: top + height / 6 };
+			const distance = { x: clientX - center.x, y: clientY - center.y }
+
+			mousePosition.x.set(center.x + (distance.x * 0.1));
+			mousePosition.y.set(center.y + (distance.y * 0.1));
+			innerCursor.classList.add("logo");
+		}
+		else if (hoveredSquare) {
+			const { left, top, width, height } = hoveredSquare.current.getBoundingClientRect();
+			const center = { x: left, y: top };
+			const distance = { x: clientX - center.x, y: clientY - center.y }
+
+			mousePosition.x.set(center.x + (distance.x * 0.1));
+			mousePosition.y.set(center.y + (distance.y * 0.1));
+			innerCursor.classList.add("square");
+		}
+		else {
+			mousePosition.x.set(e.clientX - cursorSize / 2);
+			mousePosition.y.set(e.clientY - cursorSize / 2);
+			if (innerCursor.classList.contains("grow")) {
+				innerCursor.classList.remove("grow");
+			}
+			if (innerCursor.classList.contains("logo")) {
+				innerCursor.classList.remove("logo");
+			}
+			if (innerCursor.classList.contains("square")) {
+				innerCursor.classList.remove("square");
+			}
+		}
+	};
+
+	const handleMouseOver = (ref) => {
+		if (ref === homeRef) {
+			setHoveredLogo(ref);
+		}
+		else if (ref === squareRef) {
+			setHoveredSquare(ref);
+		}
+		else {
+			setHoveredLink(ref);
+		}
+	};
+
+	const handleMouseOut = () => {
+		setHoveredLink(null);
+	};
+	const handleMouseOutLogo = () => {
+		setHoveredLogo(null);
+	};
+	const handleMouseOutSquare = () => {
+		setHoveredSquare(null);
+	};
 
 	useEffect(() => {
 		const opening = gsap.utils.toArray('.opening');
 		const tl = gsap.timeline();
 
-		let innerCursor = document.querySelector('.inner-cursor');
-		let outerCursor = document.querySelector('.outer-cursor');
-
-		function moveCursor(e) {
-			let x = e.clientX;
-			let y = e.clientY;
-
-			innerCursor.style.left = `${x}px`;
-			innerCursor.style.top = `${y}px`;
-			outerCursor.style.left = `${x}px`;
-			outerCursor.style.top = `${y}px`;
-		}
-
-		const handleCursorHover = () => {
-			innerCursor.classList.add("grow");
-			outerCursor.classList.add("grow");
-		};
-
-		const handleCursorLeave = () => {
-			innerCursor.classList.remove("grow");
-			outerCursor.classList.remove("grow");
-		};
-		const handleCursorHoverText = () => {
-			innerCursor.classList.add("highlight");
-			outerCursor.classList.add("highlight");
-		};
-
-		const handleCursorLeaveText = () => {
-			innerCursor.classList.remove("highlight");
-			outerCursor.classList.remove("highlight");
-		};
-
-		document.addEventListener('mousemove', moveCursor);
-
-		const links = Array.from(document.querySelectorAll("a"));
-		const focus = document.getElementById("highlight");
-
-		links.forEach(link => {
-			link.addEventListener('mouseover', handleCursorHover);
-			link.addEventListener('mouseleave', handleCursorLeave);
-		});
-
-		if (focus) {
-			focus.addEventListener('mouseover', handleCursorHoverText);
-			focus.addEventListener('mouseleave', handleCursorLeaveText);
-		};
-
 		tl.to(opening, {
 			height: 0,
 			duration: 1,
 		});
-
-		// Fonction de nettoyage pour supprimer les écouteurs d'événements
-		return () => {
-			document.removeEventListener('mousemove', moveCursor);
-			links.forEach(link => {
-				link.removeEventListener('mouseover', handleCursorHover);
-				link.removeEventListener('mouseleave', handleCursorLeave);
-			});
-			if (focus) {
-				focus.removeEventListener('mouseover', handleCursorHover);
-				focus.removeEventListener('mouseleave', handleCursorLeave);
-			}
-		};
 	}, []);
 
+	useEffect(() => {
+
+	}, [hoveredLink]);
 
 	return (
-		<div id="parent-container" className='container'>
+		<div id="parent-container" className='container' onMouseMove={mouseMove}>
 			<div className="header">
 				<div className="logo">
-					<a href='#home' id='mix'>portfolio.</a>
+					<a href='#home' id='mix' >
+						<Magnetic>
+							<span className='boundsLogo' ref={homeRef} onMouseOver={() => handleMouseOver(homeRef)} onMouseOut={handleMouseOutLogo}></span>
+							portfolio.
+						</Magnetic>
+					</a>
 				</div>
-				<div className="image"></div>
+				<div className="square">
+					<span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span>
+				</div>
 			</div>
+			<div className="menu-container">
+				<div className="bounce" ref={boundRef}>
+					<div className="menus">
 
-			<h2>
-				<div className="menus">
-					<a href='#about' id='mix'>ABOUT</a>
-					<a href='#work' id='mix'>PROJECTS</a>
-					<a href='#skills' id='mix'>SKILLS</a>
-					<a href='#contact' id='mix'>CONTACT</a>
-				</div >
-			</h2 >
-			<div className="inner-cursor"></div>
-			<div className="outer-cursor"></div>
+						<a href='#about' id='mix'>
+							<Magnetic>
+								<span className='bounds' ref={aboutRef} onMouseOver={() => handleMouseOver(aboutRef)} onMouseOut={handleMouseOut}></span>
+								ABOUT
+							</Magnetic>
+						</a>
+						<a href='#work' id='mix' >
+							<Magnetic>
+								<span className='bounds' ref={projectsRef} onMouseOver={() => handleMouseOver(projectsRef)} onMouseOut={handleMouseOut}></span>
+								PROJECTS
+							</Magnetic>
+						</a>
+						<a href='#skills' id='mix' >
+							<Magnetic>
+								<span className='bounds' ref={skillsRef} onMouseOver={() => handleMouseOver(skillsRef)} onMouseOut={handleMouseOut}></span>
+								SKILLS
+							</Magnetic>
+						</a>
+						<a href='#contact' id='mix' >
+							<Magnetic>
+								<span className='bounds' ref={contactRef} onMouseOver={() => handleMouseOver(contactRef)} onMouseOut={handleMouseOut}></span>
+								CONTACT
+							</Magnetic>
+						</a>
+					</div >
+				</div>
+			</div>
+			<motion.div
+				className='inner-cursor'
+				style={{
+					x: mousePosition.x,
+					y: mousePosition.y,
+					scaleX: scale.x,
+					scaleY: scale.y,
+				}} />
 			<div className="opening" />
 			<Hero />
 			<Presentation />
-			{/* <section>
-				<Scene />
-			</section> */}
 			<section className='work-header'>
 				<h1>RECENT PROJECTS</h1>
 			</section>
