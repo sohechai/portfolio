@@ -10,6 +10,7 @@ import Presentation from './presentation';
 import Work from './Work.jsx';
 import Scene from './Scene.jsx';
 import Magnetic from './components/Magnetic.jsx';
+import About from './About.jsx';
 
 function App() {
 	const aboutRef = useRef(null);
@@ -22,7 +23,7 @@ function App() {
 	const [hoveredLink, setHoveredLink] = useState(null);
 	const [hoveredLogo, setHoveredLogo] = useState(null);
 	const [hoveredSquare, setHoveredSquare] = useState(null);
-	const cursorSize = hoveredLink ? 84 : 10;
+	const cursorSize = hoveredLink ? 84 : 16;
 
 	const mousePosition = {
 		x: useMotionValue(0),
@@ -108,7 +109,7 @@ function App() {
 
 		tl.to(opening, {
 			height: 0,
-			duration: 1,
+			duration: 2,
 		});
 	}, []);
 
@@ -173,9 +174,10 @@ function App() {
 			<div className="opening" />
 			<Hero />
 			<Presentation />
-			<section className='work-header'>
+			<About />
+			<div className='work-header'>
 				<h1>RECENT PROJECTS</h1>
-			</section>
+			</div>
 			<Work />
 			<section></section>
 			<Skills />

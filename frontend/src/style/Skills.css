@@ -11,7 +11,7 @@
 }
 
 .skills-container>h1 {
-	margin: 0 0 0px 20px;
+	margin-left: 20px;
 	font-size: 10vw;
 }
 
@@ -68,7 +68,7 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background: #1c1b1b;
+	background: #000000;
 	opacity: 1;
 	transform: translateY(0);
 	white-space: nowrap;

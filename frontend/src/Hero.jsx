@@ -3,22 +3,22 @@ import './style/Hero.css'
 import gsap from 'gsap';
 
 function Hero() {
-	const heroTransition = (elem) => {
-		gsap.to(
-			elem,
-			{
-				opacity: 0,
-				duration: 3,
-				ease: "none",
-				scrollTrigger: {
-					trigger: elem,
-					start: "top top",
-					end: "center",
-					scrub: true,
-				}
-			}
-		)
-	}
+	// const heroTransition = (elem) => {
+	// 	gsap.to(
+	// 		elem,
+	// 		{
+	// 			opacity: 0,
+	// 			duration: 3,
+	// 			ease: "none",
+	// 			scrollTrigger: {
+	// 				trigger: elem,
+	// 				start: "top top",
+	// 				end: "center",
+	// 				scrub: true,
+	// 			}
+	// 		}
+	// 	)
+	// }
 	useEffect(() => {
 		const titles = gsap.utils.toArray('.title');
 		const tl = gsap.timeline({ repeat: -1 });
@@ -55,7 +55,7 @@ function Hero() {
 					stagger: .01,
 				}, "<2")
 		});
-		heroTransition(".hero-container");
+		// heroTransition(".hero-container");
 		
 	}, []);
 

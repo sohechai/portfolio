@@ -201,8 +201,8 @@ div.logo>a {
 	z-index: 10000;
 	position: fixed;
 	top: 0;
-	width: 10px;
-	height: 10px;
+	width: 16px;
+	height: 16px;
 	transform: translate(-50%, -50%);
 	background-color: white;
 	mix-blend-mode: difference;
