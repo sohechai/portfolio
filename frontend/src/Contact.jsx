@@ -71,7 +71,7 @@ function Contact() {
 						</svg>
 					</div>
 					<Magnetic>
-						<a href="" className='text'>RESUME</a>
+						<a href="" target="_blank" className='text'>RESUME</a>
 					</Magnetic>
 
 				</div>

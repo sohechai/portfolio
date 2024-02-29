@@ -21,6 +21,16 @@
 	font-size: 10vw;
 }
 
+.r-text {
+	margin-left: 20px;
+	font-size: 10vw;
+	font-weight: 900;
+}
+
+.r-letter {
+	display: block;
+	/* text-transform: uppercase; */
+}
 .about-cards-container {
 	position: relative;
 	/* margin-top: 10vh; */

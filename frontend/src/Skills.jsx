@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './style/Skills.css'
+import AnimatedLetters from './components/AnimatedLetters'
 
 function Skills() {
 
@@ -7,7 +8,7 @@ function Skills() {
 	return (
 		<section className='skills' id='skills'>
 			<div className="skills-container">
-				<h1>SKILLS</h1>
+				<AnimatedLetters targetDiv={<h1>SKILLS</h1>} />
 				<div className="row" >
 					<div className="item-menu">
 						<span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES</div>
@@ -134,7 +135,7 @@ function Skills() {
 				</div>
 			</div>
 			<div className='bottom-skills' >
-				<h1 id='contact'>LET'S TALK</h1>
+				<AnimatedLetters targetDiv={<h1 id='contact'>LET'S TALK</h1>} />
 			</div>
 		</section >
 	)

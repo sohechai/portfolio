@@ -11,6 +11,7 @@ import Work from './Work.jsx';
 import Scene from './Scene.jsx';
 import Magnetic from './components/Magnetic.jsx';
 import About from './About.jsx';
+import AnimatedLetters from './components/AnimatedLetters.jsx';
 
 function App() {
 	const aboutRef = useRef(null);
@@ -176,7 +177,8 @@ function App() {
 			<Presentation />
 			<About />
 			<div className='work-header'>
-				<h1>RECENT PROJECTS</h1>
+				<AnimatedLetters targetDiv={<h1>PROJECTS</h1>} />
+				{/* <h1>RECENT PROJECTS</h1> */}
 			</div>
 			<Work />
 			<section></section>

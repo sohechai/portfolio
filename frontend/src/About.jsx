@@ -7,11 +7,12 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import { useScroll } from 'framer-motion'
 import AboutBottom from './components/AboutBottom'
+import AnimatedLetters from './components/AnimatedLetters'
 
 function About() {
 	const containerRef = useRef(null);
 	const path = useRef(null);
-	
+
 	// const setPath = (progress) => {
 	// 	const path = 
 	// }
@@ -33,10 +34,59 @@ function About() {
 	// 	return () => ctx.revert();
 	// }, [])
 
+	// useEffect(() => {
+	// 	const title = document.querySelector('.r-text');
+	// 	const tl = gsap.timeline({ repeat: -1 });
+	// 	const lettersAndSymbols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '!', '@', '#', '$', '%', '^', '&', '*', '-', '_', '+', '=', ';', ':', '<', '>', ','];
+
+	// 	const wordContainer = [];
+	// 	title.innerText.split('').map(word => {
+	// 		let span = document.createElement('span');
+	// 		span.classList.add('object');
+	// 		span.textContent = word;
+	// 		wordContainer.push(span);
+	// 	})
+
+	// 	title.innerHTML = '';
+	// 	wordContainer.forEach(e => {
+	// 		title.appendChild(e)
+	// 	})
+
+	// 	const letters = title.querySelectorAll('span.object');
+
+	// 	letters.forEach((char, index) => {
+	// 		let initialHTML = char.innerHTML;
+	// 		gsap.fromTo(char, {
+	// 			opacity: 0
+	// 		},
+	// 			{
+	// 				duration: 0.03,
+	// 				innerHTML: () => lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)],
+	// 				repeat: 1,
+	// 				repeatRefresh: true,
+	// 				opacity: 1,
+	// 				repeatDelay: 0.03,
+	// 				delay: (index + 1) * 0.18,
+	// 				onComplete: () => gsap.set(char, { innerHTML: initialHTML, delay: 0.03 }),
+	// 				scrollTrigger: {
+	// 					trigger: title,
+	// 					start: 'top bottom',
+	// 					end: 'bottom center',
+	// 					toggleActions: "play resume resume reset",
+	// 					onEnter: () => gsap.set(char, { opacity: 0 }),
+	// 					markers: true
+	// 				}
+	// 			});
+	// 	});
+
+	// }, []);
+
+
 	return (
 		<section className='about-container' id='about' ref={containerRef}>
 			<div className="about-header">
-				<h1>ABOUT</h1>
+				<AnimatedLetters targetDiv={<h1 className="r-text">ABOUT</h1>} />
+				{/* <h1 className="r-text">ABOUT</h1> */}
 			</div>
 			<div className="about-cards-container">
 				<div className="top">
@@ -49,6 +99,7 @@ function About() {
 				<div className="line">
 					LINE
 				</div>
+
 				<div className="bottom">
 					{
 						datas.map((data, index) => {
