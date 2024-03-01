@@ -40,14 +40,10 @@ function Contact() {
 		<section className="contact" >
 			<div className="contact-container">
 				<div className='text-container'>
-					<Magnetic>
-						<a className='text' onClick={copyMail}>MAIL</a>
-					</Magnetic>
+					<a className='text' onClick={copyMail}>MAIL</a>
 				</div>
 				<div className='text-container'>
-					<Magnetic>
-						<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
-					</Magnetic>
+					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
 					<div className="svg-container">
 						<svg className="svg">
 							<g id="round">
@@ -70,15 +66,10 @@ function Contact() {
 							</g>
 						</svg>
 					</div>
-					<Magnetic>
-						<a href="" target="_blank" className='text'>RESUME</a>
-					</Magnetic>
-
+					<a href="" target="_blank" className='text'>RESUME</a>
 				</div>
 				<div className='text-container'>
-					<Magnetic>
 					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
-					</Magnetic>
 				</div>
 				<div className="footer">
 					<p>Sofia Hechaïchi © 2024</p>

@@ -135,6 +135,7 @@ function Skills() {
 				</div>
 			</div>
 			<div className='bottom-skills' >
+				<span id='contact'></span>
 				<AnimatedLetters targetDiv={<h1 id='contact'>LET'S TALK</h1>} />
 			</div>
 		</section >

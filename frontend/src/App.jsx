@@ -172,7 +172,7 @@ function App() {
 					scaleX: scale.x,
 					scaleY: scale.y,
 				}} />
-			<div className="opening" />
+			{/* <div className="opening" /> */}
 			<Hero />
 			<Presentation />
 			<About />
