@@ -30,7 +30,6 @@ function About() {
 				col.classList.add('active');
 			})
 
-			if (index === sectionCols.length - 1) col.classList.add('active');
 		});
 	}
 
@@ -51,15 +50,12 @@ function About() {
 								<div className="section-col-year">
 									<h1>{data.year}</h1>
 								</div>
-								<div className="section-col-title">
+								<div className="section-col-title"  style = {{ color : data.color }}>
 									<h2>{data.title}</h2>
 								</div>
-								<div className="section-col-image" style={{backgroundColor: '#ffffff'}}>
-								<p>{data.description}</p>
-								</div>
-								{/* <div className="section-col-description">
+								<div className="section-col-description" >
 									<p>{data.description}</p>
-								</div> */}
+								</div>
 							</div>
 						})
 					}

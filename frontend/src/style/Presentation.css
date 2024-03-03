@@ -1,14 +1,17 @@
 .presentation-container {
-	align-items: start;
+	/* align-items: cent/; */
 	overflow: hidden;
-	height: 100vh;
+	height: 200vh;
+	width: 92vw;
+	margin: auto;
 }
 
 .presentation-text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: fit-content;
+	width: 92vw;
+	height: 50rem;
 	border-radius: 8px;
 	overflow: hidden;
 	background-image: url('../images/text-bg.png');

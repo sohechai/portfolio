@@ -8,10 +8,13 @@ function Skills() {
 	return (
 		<section className='skills' id='skills'>
 			<div className="skills-container">
-				<AnimatedLetters targetDiv={<h1>SKILLS</h1>} />
+				<div className="skills-header">
+					<AnimatedLetters targetDiv={<h1>SKILLS</h1>} />
+				</div>
 				<div className="row" >
 					<div className="item-menu">
-						<span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES</div>
+						<span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES
+					</div>
 					<div className='marquee'  >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner-long">
@@ -38,7 +41,10 @@ function Skills() {
 					</div>
 				</div>
 				<div className="row" >
-					<div className="item-menu"><span className='numerotation'>(02)</span>FRONTEND</div>
+					<div className="item-menu">
+						<span className='numerotation'>(02)</span>
+						FRONTEND
+					</div>
 					<div className='marquee' >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner">

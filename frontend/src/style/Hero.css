@@ -55,9 +55,11 @@ div.text-wrapper {
 }
 
 .name {
-	transform: translateY(-100%);
+	letter-spacing: 4px;
+	transform: translateY(100%);
 	animation-name: slideDown;
 	animation-duration: 1s;
+	animation-delay: 3s;
 	animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 	animation-fill-mode: forwards;
 }

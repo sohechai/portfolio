@@ -12,6 +12,7 @@ import Scene from './Scene.jsx';
 import Magnetic from './components/Magnetic.jsx';
 import About from './About.jsx';
 import AnimatedLetters from './components/AnimatedLetters.jsx';
+import LoadingPage from './PreLoader.jsx';
 
 function App() {
 	const aboutRef = useRef(null);
@@ -120,6 +121,7 @@ function App() {
 
 	return (
 		<div id="parent-container" className='container' onMouseMove={mouseMove}>
+			<LoadingPage />
 			<div className="header">
 				<div className="logo">
 					<a href='#home' id='mix' >
@@ -176,7 +178,7 @@ function App() {
 			<Hero />
 			<Presentation />
 			<About />
-			<div className='work-header'>
+			<div className='work-header' id='work'>
 				<AnimatedLetters targetDiv={<h1>PROJECTS</h1>} />
 				{/* <h1>RECENT PROJECTS</h1> */}
 			</div>

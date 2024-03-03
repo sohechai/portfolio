@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './style/Work.css'
 import WorkSection from './components/WorkComponant'
-import picture01 from './images/work-picture01.png'
+import data from './data/projects-data'
 import { ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
 
@@ -43,12 +43,22 @@ function Work() {
 	}, [])
 
 	return (
-		<section className='work-container' id='work'>
+		<section className='work-container'>
 			<div className="left">
-				<WorkSection number='01' title='Cub3D' tag='C minilibX' description='Inspired by the game Wolfenstein 3D, Cub3D is a realistic 3D labyrinth using ray-casting.' />
-				<WorkSection number='02' title='Transcendance' tag='React NestJS TypeScript' description='Full-stack Pong game website with an integrated text chat feature.' />
-				<WorkSection number='03' title='Python Script' tag='Python' description='Crafted Python scripts to boost my productivity at work.' />
-				<WorkSection number='04' title='Portfolio' tag='reactJS html css' description='My very first Portfolio. We all start somewhere !' />
+				{
+					data.map((project, index) => (
+						<WorkSection
+							key={index}
+							number={index}
+							title={project.title}
+							tag={project.tag}
+							description={project.description}
+							websiteUrl={project.websiteUrl}
+							githubUrl={project.githubUrl}
+							image={project.image}
+						/>
+					))
+				}
 			</div>
 			<div className="right">
 				<div className="work-right-component">

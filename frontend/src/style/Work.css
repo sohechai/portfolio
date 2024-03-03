@@ -4,8 +4,8 @@
 	align-items: start;
 	background-color: var(--dark-bg-color);
 	justify-content: left;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	/* border-top-left-radius: 15px;
+	border-top-right-radius: 15px; */
 }
 
 .work-header {
@@ -57,15 +57,6 @@
 	color: var(--bg-color);
 }
 
-.work-right-component {
-	position: relative;
-	overflow: hidden;
-	width: 500px;
-	height: 30vh;
-	border-radius: 0.25rem;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
 .work-number {
 	margin-bottom: 12px;
 	color: var(--bg-color);
@@ -103,11 +94,11 @@
 .project-button {
 	/* padding: 8px; */
 	border: none;
-	margin-right: 12px;
+	margin-right: 16px;
 	color: var(--bg-color);
 
 	>img {
-		margin-right: 8px;
+		margin-left: 8px;
 		height: 8px;
 		color: var(--bg-color);
 	}
@@ -135,17 +126,14 @@
 	align-items: center;
 }
 
-.work-images>img {
-	/* height: 250px;
-	width: auto;
-	border-radius: 12px;
-	box-shadow: rgba(0, 0, 0, 0.25) 12px 12px 4px 4px; */
-}
-
-.work-picture01 {
-	/* height: 50px;
-	width: auto; */
-	/* border-radius: 12px; */
+.work-right-component {
+	position: relative;
+	overflow: hidden;
+	width: 450px;
+	height: 250px;
+	border-radius: 0.25rem;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	background-size: cover;
 }
 
 .panel {
@@ -157,27 +145,31 @@
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	background-position: 50% 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+	/* background-position: 50% 50%;    */
+	/* background-size: cover;
+	background-repeat: no-repeat; */
 }
 
 .panel.blue {
 	z-index: auto;
-	background-image: url(../images/work-picture01.png);
+	background-image: url(../images/cub3d-screen.png);
+	background-size: cover;
 }
 
 .panel.red {
 	z-index: auto;
-	background-image: url(../images/work-picture02.png);
+	background-image: url(../images/transcendance-screen.png);
+	background-size: cover;
 }
 
 .panel.orange {
 	z-index: auto;
-	background-image: url(../images/work-picture01.png);
+	background-image: url(../images/python-script-screen.png);
+	background-size: cover;
 }
 
 .panel.purple {
 	z-index: auto;
-	background-image: url(../images/work-picture01.png);
+	background-image: url(../images/portfolio-screen.png);
+	background-size: cover;
 }

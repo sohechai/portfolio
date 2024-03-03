@@ -26,7 +26,7 @@ function AnimatedLetters({ targetDiv }) {
 		letters.forEach((char, index) => {
 			let initialHTML = char.innerHTML;
 			gsap.fromTo(char, {
-				opacity: 0
+				// opacity: 0
 			},
 				{
 					duration: 0.03,
@@ -35,7 +35,7 @@ function AnimatedLetters({ targetDiv }) {
 					repeatRefresh: true,
 					opacity: 1,
 					repeatDelay: 0.03,
-					delay: (index + 1) * 0.18,
+					delay: (index + 1) * 0.22,
 					onComplete: () => gsap.set(char, { innerHTML: initialHTML, delay: 0.03 }),
 					scrollTrigger: {
 						trigger: title,

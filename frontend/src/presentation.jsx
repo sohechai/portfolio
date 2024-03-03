@@ -13,7 +13,7 @@ function Presentation() {
 		gsap.to(
 			elem,
 			{
-				y: -50,
+				y: -100,
 				duration: 3,
 				ease: "none",
 				scrollTrigger: {

@@ -13,6 +13,7 @@
 	box-sizing: border-box;
 	font-family: "GeoSansLight", sans-serif;
 	color: var(--dark-bg-color);
+
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	scroll-behavior: smooth;
@@ -20,7 +21,7 @@
 
 body {
 	overflow-x: hidden;
-	background-color: var(--dark-bg-color);
+	/* background-color: var(--dark-bg-color); */
 }
 
 *::-webkit-scrollbar {
@@ -61,13 +62,6 @@ body:hover .outer-cursor {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-.container-menu {
-	display: flex;
-	background-color: lightslategray;
-	align-items: center;
-	justify-content: center;
 }
 
 .header {
