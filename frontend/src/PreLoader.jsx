@@ -19,7 +19,7 @@ const LoadingPage = () => {
 		<motion.div
 			animate={{
 				x: 0,
-				y: -1000,
+				y: '-100%',
 			}}
 			transition={{
 				duration: 1,

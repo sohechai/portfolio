@@ -61,7 +61,7 @@ function App() {
 		}
 		else if (hoveredSquare) {
 			const { left, top, width, height } = hoveredSquare.current.getBoundingClientRect();
-			const center = { x: left, y: top };
+			const center = { x: left + width / 8, y: top - height };
 			const distance = { x: clientX - center.x, y: clientY - center.y }
 
 			mousePosition.x.set(center.x + (distance.x * 0.1));
@@ -132,7 +132,9 @@ function App() {
 					</a>
 				</div>
 				<div className="square">
-					<span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span>
+					<Magnetic>
+						<span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span>
+					</Magnetic>
 				</div>
 			</div>
 			<div className="menu-container">

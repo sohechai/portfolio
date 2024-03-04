@@ -5,6 +5,7 @@ import Magnetic from './components/Magnetic'
 
 function Contact() {
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const [blured, setBlured] = useState(false);
 
 	const copyMail = (e) => {
 		const email = 'sofia.hechaichi@gmail.com';
@@ -40,10 +41,22 @@ function Contact() {
 		<section className="contact" >
 			<div className="contact-container">
 				<div className='text-container'>
-					<a className='text' onClick={copyMail}>MAIL</a>
+					<a
+						className={`text ${blured ? 'blur' : ''}`}
+						onClick={copyMail}
+						onMouseEnter={() => setBlured(true)}
+						onMouseLeave={() => setBlured(false)}
+					>
+						MAIL
+					</a>
 				</div>
 				<div className='text-container'>
-					<a href="https://www.linkedin.com/in/sofia-hechaichi/" target="_blank" className='text'>LINKEDIN</a>
+					<a href="https://www.linkedin.com/in/sofia-hechaichi/"
+						target="_blank"
+						className={`text ${blured ? 'blur' : ''}`}
+						onClick={copyMail}
+						onMouseEnter={() => setBlured(true)}
+						onMouseLeave={() => setBlured(false)}>LINKEDIN</a>
 					<div className="svg-container">
 						<svg className="svg">
 							<g id="round">
@@ -66,17 +79,23 @@ function Contact() {
 							</g>
 						</svg>
 					</div>
-					<a href="" target="_blank" className='text'>RESUME</a>
+					<a href="" target="_blank" className={`text ${blured ? 'blur' : ''}`}
+						onClick={copyMail}
+						onMouseEnter={() => setBlured(true)}
+						onMouseLeave={() => setBlured(false)}>RESUME</a>
 				</div>
 				<div className='text-container'>
-					<a href="https://github.com/sohechai" target="_blank" className='text'>GITHUB</a>
+					<a href="https://github.com/sohechai" target="_blank" className={`text ${blured ? 'blur' : ''}`}
+						onClick={copyMail}
+						onMouseEnter={() => setBlured(true)}
+						onMouseLeave={() => setBlured(false)}>GITHUB</a>
 				</div>
 				<div className="footer">
 					<p>Sofia Hechaïchi © 2024</p>
 				</div>
 			</div>
 
-		</section>
+		</section >
 	)
 }
 

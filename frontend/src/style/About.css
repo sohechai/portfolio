@@ -54,7 +54,7 @@
 	padding: 8rem 4rem;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
+	filter: blur(1px);
 	align-items: center;
 	transition: var(--transition-width);
 	overflow: hidden;
@@ -70,18 +70,17 @@
 	transition: var(--transition-width);
 	transform-origin: left;
 	background-color: var(--bg-tab-content);
+	filter: blur(0);
 }
 
 .section-col.active::after {
-    opacity: 0; /* Rend le pseudo-élément complètement transparent */
-    /* Ou vous pouvez également le rendre non visible en utilisant display: none; */
-    /* display: none; */
+    opacity: 0;
 }
 
 .section-col.active h1,
 .section-col.active h2,
 .section-col.active p {
-	/* color: #547910; */
+	
 }
 
 
@@ -104,7 +103,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	opacity: 0.5;
+	opacity: 0.2;
 	background-color: var(--bg-tab-content);
 }
 

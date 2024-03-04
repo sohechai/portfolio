@@ -16,7 +16,7 @@
 	background-color: var(--dark-bg-color);
 }
 
-.contact > h2 {
+.contact>h2 {
 	color: white;
 	font-size: xx-large;
 }
@@ -75,7 +75,37 @@
 	font-weight: bolder;
 	color: white;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+	transition: filter 0.3s ease-in-out;
 }
+
+.text.blur {
+	filter: blur(4px);
+	/* opacity: 0.6; */
+}
+
+.text:hover {
+	color: #D4EDB7;
+	filter: blur(0);
+}
+
+.text::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background: #D4EDB7;
+	transition: width 0.3s ease-in-out;
+}
+
+.text:hover::after {
+	width: 100%;
+	left: 0;
+}
+
 
 .text:nth-child(3) {
 	text-align: left;
