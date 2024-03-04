@@ -78,8 +78,7 @@
 
 .tag {
 	display: flex;
-	width: fit-content;
-	margin-top: 16px;
+	width: 50vw;
 
 	>p {
 		font-size: 14px;
@@ -91,7 +90,12 @@
 	}
 }
 
+.button-container {
+	margin-bottom: 16px;
+}
+
 .project-button {
+	position: relative;
 	/* padding: 8px; */
 	border: none;
 	margin-right: 16px;
@@ -102,6 +106,23 @@
 		height: 8px;
 		color: var(--bg-color);
 	}
+}
+
+.project-button::after {
+	content: "";
+	position: absolute;
+	bottom: -4px;
+	/* bottom: 0; */
+	right: 0;
+	width: 0;
+	height: 2px;
+	background: var(--bg-color);
+	transition: width 0.3s ease-in-out;
+}
+
+.project-button:hover::after {
+	width: 100%;
+	left: 0;
 }
 
 .work-card {
@@ -129,8 +150,9 @@
 .work-right-component {
 	position: relative;
 	overflow: hidden;
-	width: 450px;
-	height: 250px;
+	width: calc(600 / 1920 * 100vw);
+	height: calc(332 / 1080 * 100vh);
+
 	border-radius: 0.25rem;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	background-size: cover;
@@ -172,4 +194,52 @@
 	z-index: auto;
 	background-image: url(../images/portfolio-screen.png);
 	background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .work-container {
+        flex-direction: column;
+		height: 350vh;
+    }
+
+	.work-left-component {
+		height: 80vh;
+	}
+
+    .left {
+        width: 100%;
+		display: flex;
+		align-items: start;
+		padding-left: 20px;
+    }
+
+	.right {
+		display: none;
+	}
+
+	.image {
+		display: flex;
+		justify-content: left;
+		margin: 16px 0 16px 0;
+		width: 100vw;
+		padding-left: -20px;
+	}
+	.image > img{
+		background-color: red;
+		width: 90vw;
+		height: auto;
+		border-radius: 4px;
+	}
+
+	.tag {
+		display: flex;
+		width: 90vw;
+	
+		>p {
+			font-size: 14px;
+			padding: 2px 4px; 
+			margin: 2px;
+			border-radius: 2px;
+		}
+	}
 }

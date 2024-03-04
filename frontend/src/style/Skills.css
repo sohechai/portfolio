@@ -133,3 +133,25 @@
 	background-position: 50% 50%;
 	background-color: white;
 }
+
+@media (max-width: 768px) {
+	.item-menu {
+		font-size: 5vw;
+		display: flex;
+		text-align: center;
+	}
+
+	.item-menu .numerotation {
+		margin: 2px 4px 0 0;
+	}
+
+	.marquee-img {
+		width: 35vw;
+		height: 70%;
+		border-radius: 10vw;
+		/* margin: 0 2vw;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-color: white; */
+	}
+}

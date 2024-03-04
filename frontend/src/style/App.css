@@ -114,11 +114,14 @@ div.logo>a {
 	height: 100%;
 	position: absolute;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	pointer-events: all;
 
 	&:hover {
-		width: 200%;
-		/* height: 100%; */
+		width: 200px;
+		height: 300%;
 	}
 }
 .boundsLogo {

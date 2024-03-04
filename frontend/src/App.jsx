@@ -43,7 +43,7 @@ function App() {
 
 		if (hoveredLink) {
 			const { left, top, width, height } = hoveredLink.current.getBoundingClientRect();
-			const center = { x: left + width / 4.9, y: top };
+			const center = { x: left + width / 3.8, y: top };
 			const distance = { x: clientX - center.x, y: clientY - center.y }
 
 			mousePosition.x.set(center.x + (distance.x * 0.1));
@@ -52,7 +52,7 @@ function App() {
 		}
 		else if (hoveredLogo) {
 			const { left, top, width, height } = hoveredLogo.current.getBoundingClientRect();
-			const center = { x: left + width / 8, y: top + height / 6 };
+			const center = { x: left + 5, y: top - height / 4 };
 			const distance = { x: clientX - center.x, y: clientY - center.y }
 
 			mousePosition.x.set(center.x + (distance.x * 0.1));
@@ -121,7 +121,7 @@ function App() {
 
 	return (
 		<div id="parent-container" className='container' onMouseMove={mouseMove}>
-			<LoadingPage />
+			{/* <LoadingPage /> */}
 			<div className="header">
 				<div className="logo">
 					<a href='#home' id='mix' >

@@ -1,5 +1,4 @@
 .presentation-container {
-	/* align-items: cent/; */
 	overflow: hidden;
 	height: 200vh;
 	width: 92vw;
@@ -29,24 +28,11 @@
 	color: white;
 	transform: translateY(50px);
 	font-weight: 900;
+	text-align: center;
 }
 
-.test {
-	padding: 15px;
-	/* background-color: red; */
-	height: 100%;
-	width: 100%;
-	font-size: fit-content;
-	display: flex;
-	/* text-align: center; */
-}
-
-.test>h1{
-	font-size: 8vw;
-	text-transform: uppercase;
-}
-
-.test>h1>span {
-	background-color: lightblue;
-	padding: 0 100px 0 100px;
+@media (max-width: 768px) {
+	.parallax-text {
+		font-size: 6vw;
+	}
 }

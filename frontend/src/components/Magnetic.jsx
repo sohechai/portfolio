@@ -23,8 +23,6 @@ export default function Framer({children}) {
             style={{
 				position: "relative",
 				color: "white",
-				width: "84px",
-				padding: "16px",
 				display: "flex",
 				justifyContent: "center",
 				alignItems: "center",

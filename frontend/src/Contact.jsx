@@ -1,21 +1,50 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './style/Contact.css'
 import { useEffect } from 'react'
-import Magnetic from './components/Magnetic'
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Contact() {
+	const [showCopied, setShowCopied] = useState(false);
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const [copyPosition, setCopyPosition] = useState({ x: 0, y: 0 });
 	const [blured, setBlured] = useState(false);
+	const timeoutRef = useRef(null); 
 
 	const copyMail = (e) => {
 		const email = 'sofia.hechaichi@gmail.com';
 		navigator.clipboard.writeText(email);
+		setShowCopied(true);
+
+		if (timeoutRef.current) {
+			clearTimeout(timeoutRef.current);
+		}
+		timeoutRef.current = setTimeout(() => {
+			setShowCopied(false);
+		}, 2000);
 	}
+
+	const spring = {
+		type: "spring",
+		stiffness: 500,
+		damping: 28
+	};
+
+	const variants = {
+		fontSize: "16px",
+		x: copyPosition.x - 50,
+		y: copyPosition.y - 100,
+		transition: {
+			type: "spring",
+			mass: 0.6,
+		}
+	};
 
 	useEffect(() => {
 		function handleMouseMove(e) {
 			const svg = document.querySelector('.svg');
 			const svgRect = svg.getBoundingClientRect();
+			const copyPositionX = e.clientX;
+			const copyPositionY = e.clientY;
 			const mouseX = e.clientX - svgRect.left;
 			const mouseY = e.clientY - svgRect.top;
 
@@ -28,6 +57,7 @@ function Contact() {
 			const y = circleCenterY + (circleRadius * Math.sin(angle));
 
 			setMousePosition({ x, y });
+			setCopyPosition({ x: copyPositionX, y: copyPositionY });
 		}
 
 		window.addEventListener('mousemove', handleMouseMove);
@@ -38,8 +68,28 @@ function Contact() {
 	}, []);
 
 	return (
-		<section className="contact" >
+		<section className="contact">
 			<div className="contact-container">
+				<div
+					className="copied"
+					animate={{ opacity: 1, y: -50 }}
+					transition={{ duration: 0.5 }}
+				>
+					<motion.h1
+						animate={variants}
+						transition={{
+							type: "spring",
+							damping: 28,
+							delay: 1,
+						}}
+						style={{
+							pointerEvents: 'none',
+							opacity: showCopied ? '1' : '0',
+						}}
+					>
+						COPIED
+					</motion.h1>
+				</div>
 				<div className='text-container'>
 					<a
 						className={`text ${blured ? 'blur' : ''}`}
@@ -51,12 +101,16 @@ function Contact() {
 					</a>
 				</div>
 				<div className='text-container'>
-					<a href="https://www.linkedin.com/in/sofia-hechaichi/"
+					<a
+						href="https://www.linkedin.com/in/sofia-hechaichi/"
 						target="_blank"
 						className={`text ${blured ? 'blur' : ''}`}
 						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
-						onMouseLeave={() => setBlured(false)}>LINKEDIN</a>
+						onMouseLeave={() => setBlured(false)}
+					>
+						LINKEDIN
+					</a>
 					<div className="svg-container">
 						<svg className="svg">
 							<g id="round">
@@ -79,23 +133,34 @@ function Contact() {
 							</g>
 						</svg>
 					</div>
-					<a href="" target="_blank" className={`text ${blured ? 'blur' : ''}`}
+					<a
+						href=""
+						target="_blank"
+						className={`text ${blured ? 'blur' : ''}`}
 						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
-						onMouseLeave={() => setBlured(false)}>RESUME</a>
+						onMouseLeave={() => setBlured(false)}
+					>
+						RESUME
+					</a>
 				</div>
 				<div className='text-container'>
-					<a href="https://github.com/sohechai" target="_blank" className={`text ${blured ? 'blur' : ''}`}
+					<a
+						href="https://github.com/sohechai"
+						target="_blank"
+						className={`text ${blured ? 'blur' : ''}`}
 						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
-						onMouseLeave={() => setBlured(false)}>GITHUB</a>
+						onMouseLeave={() => setBlured(false)}
+					>
+						GITHUB
+					</a>
 				</div>
 				<div className="footer">
 					<p>Sofia Hechaïchi © 2024</p>
 				</div>
 			</div>
-
-		</section >
+		</section>
 	)
 }
 

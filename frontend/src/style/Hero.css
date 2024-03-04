@@ -69,3 +69,24 @@ div.text-wrapper {
 		transform: translateY(0);
 	}
 }
+
+@media (max-width: 768px) {
+	/* .hero-container {
+		height: 100vh;
+	}
+	.mask>h1 {
+		font-size: 24vw;
+	}
+	.mask>p {
+		font-size: 16px;
+	}
+	.text-wrapper {
+		height: 10vw;
+	} */
+	.title {
+		font-size: 5vw;
+	}
+	div.mask>h1 {
+		font-size: 32vw;
+	}
+}
