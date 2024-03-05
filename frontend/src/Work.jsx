@@ -15,7 +15,7 @@ function Work() {
 					end: "bottom bottom",
 					pin: '.right'
 				})
-				gsap.set(".panel", { zIndex: (i, targets) => targets.length - i });
+				gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
 
 				var images = gsap.utils.toArray('.panel:not(.purple)');
 
