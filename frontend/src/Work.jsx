@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './style/Work.css'
-import WorkSection from './components/WorkComponant'
-import data from './data/projects-data'
+import WorkSection from './components/WorkComponant.jsx'
+import data from './data/projects-data.jsx'
 import { ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
 

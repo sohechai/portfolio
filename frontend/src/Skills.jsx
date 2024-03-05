@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/Skills.css'
-import AnimatedLetters from './components/AnimatedLetters'
+import AnimatedLetters from './components/AnimatedLetters.jsx'
 
 function Skills() {
 

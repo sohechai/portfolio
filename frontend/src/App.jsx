@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react'
-import Hero from './hero';
-import Skills from './skills';
-import Contact from './contact';
+import Hero from './Hero.jsx';
+import Skills from './Skills.jsx';
+import Contact from './Contact.jsx';
 import { useEffect } from 'react';
 import './style/App.css'
 import { motion, useMotionValue } from "framer-motion"
 import { gsap } from 'gsap'
-import Presentation from './presentation';
+import Presentation from './Presentation.jsx';
 import Work from './Work.jsx';
 import Magnetic from './components/Magnetic.jsx';
 import About from './About.jsx';
