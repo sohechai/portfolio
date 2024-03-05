@@ -104,19 +104,7 @@ function App() {
 		setHoveredSquare(null);
 	};
 
-	useEffect(() => {
-		const opening = gsap.utils.toArray('.opening');
-		const tl = gsap.timeline();
-
-		tl.to(opening, {
-			height: 0,
-			duration: 2,
-		});
-	}, []);
-
-	useEffect(() => {
-
-	}, [hoveredLink]);
+	useEffect(() => {}, [hoveredLink]);
 
 	return (
 		<div id="parent-container" className='container' onMouseMove={mouseMove}>
