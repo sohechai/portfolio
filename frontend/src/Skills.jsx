@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import './style/Skills.css'
 import AnimatedLetters from './components/AnimatedLetters'
 

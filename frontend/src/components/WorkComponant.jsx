@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import iconArrow from '../images/arrow.png';
-import test from '../images/architecture-01.png';
 const WorkSection = ({ number, title, description, stack, websiteUrl, githubUrl, tags, hasGithubLink, hasWebsiteLink, img }) => {
 	const splitstack = stack.split(" ");
 	const splitTags = tags.split(",");
@@ -10,12 +9,12 @@ const WorkSection = ({ number, title, description, stack, websiteUrl, githubUrl,
 
 	useEffect(() => {
 		window.addEventListener('resize', () => {
-			if (window.innerWidth < 768) {
+			if (window.innerWidth < 1300) {
 				setSize(true);
 			} else {
 				setSize(false);
 			}
-		}	);
+		});
 	}, []);
 	return (
 		<div className='work-left-component'>

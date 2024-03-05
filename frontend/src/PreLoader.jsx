@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style/PreLoader.css';
-import { gsap } from 'gsap';
 import { motion } from 'framer-motion';
 
 const words = ["Hello,", "welcome", "to", "my", "portfolio"]
+
 const LoadingPage = () => {
 	const loadingRef = useRef(null);
 	const [index, setIndex] = useState(0);
@@ -23,7 +23,7 @@ const LoadingPage = () => {
 			}}
 			transition={{
 				duration: 1,
-				delay: 3 
+				delay: 3
 			}}
 			ref={loadingRef}
 			className='introduction'>

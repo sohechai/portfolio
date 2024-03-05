@@ -4,15 +4,13 @@ import Skills from './skills';
 import Contact from './contact';
 import { useEffect } from 'react';
 import './style/App.css'
-import { animate, motion, useMotionValue } from "framer-motion"
+import { motion, useMotionValue } from "framer-motion"
 import { gsap } from 'gsap'
 import Presentation from './presentation';
 import Work from './Work.jsx';
-import Scene from './Scene.jsx';
 import Magnetic from './components/Magnetic.jsx';
 import About from './About.jsx';
 import AnimatedLetters from './components/AnimatedLetters.jsx';
-import LoadingPage from './PreLoader.jsx';
 
 function App() {
 	const aboutRef = useRef(null);
@@ -43,7 +41,7 @@ function App() {
 
 		if (hoveredLink) {
 			const { left, top, width, height } = hoveredLink.current.getBoundingClientRect();
-			const center = { x: left + width / 3.8, y: top };
+			const center = { x: left, y: top };
 			const distance = { x: clientX - center.x, y: clientY - center.y }
 
 			mousePosition.x.set(center.x + (distance.x * 0.1));
@@ -176,13 +174,11 @@ function App() {
 					scaleX: scale.x,
 					scaleY: scale.y,
 				}} />
-			{/* <div className="opening" /> */}
 			<Hero />
 			<Presentation />
 			<About />
 			<div className='work-header' id='work'>
 				<AnimatedLetters targetDiv={<h1>PROJECTS</h1>} />
-				{/* <h1>RECENT PROJECTS</h1> */}
 			</div>
 			<Work />
 			<section></section>

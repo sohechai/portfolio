@@ -2,11 +2,6 @@
 import React, { useEffect, useRef } from 'react'
 import './style/About.css'
 import datas from './data/about-data.jsx'
-import Cards from './components/Cards'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
-import { useScroll } from 'framer-motion'
-import AboutBottom from './components/AboutBottom'
 import AnimatedLetters from './components/AnimatedLetters'
 
 function About() {
@@ -50,7 +45,7 @@ function About() {
 								<div className="section-col-year">
 									<h1>{data.year}</h1>
 								</div>
-								<div className="section-col-title"  style = {{ color : data.color }}>
+								<div className="section-col-title" style={{ color: data.color }}>
 									<h2>{data.title}</h2>
 								</div>
 								<div className="section-col-description" >

@@ -39,7 +39,7 @@ function Hero() {
 					rotateX: 90,
 					stagger: .01,
 				}, "<2")
-		});		
+		});
 	}, []);
 
 	return (

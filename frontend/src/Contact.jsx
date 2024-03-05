@@ -1,14 +1,15 @@
 import React, { useRef, useState } from 'react'
 import './style/Contact.css'
 import { useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
+import resume from './data/CV_Sofia_Hechaichi.pdf';
 
 function Contact() {
 	const [showCopied, setShowCopied] = useState(false);
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	const [copyPosition, setCopyPosition] = useState({ x: 0, y: 0 });
 	const [blured, setBlured] = useState(false);
-	const timeoutRef = useRef(null); 
+	const timeoutRef = useRef(null);
 
 	const copyMail = (e) => {
 		const email = 'sofia.hechaichi@gmail.com';
@@ -105,7 +106,6 @@ function Contact() {
 						href="https://www.linkedin.com/in/sofia-hechaichi/"
 						target="_blank"
 						className={`text ${blured ? 'blur' : ''}`}
-						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
 						onMouseLeave={() => setBlured(false)}
 					>
@@ -134,10 +134,9 @@ function Contact() {
 						</svg>
 					</div>
 					<a
-						href=""
+						href={resume}
 						target="_blank"
 						className={`text ${blured ? 'blur' : ''}`}
-						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
 						onMouseLeave={() => setBlured(false)}
 					>
@@ -149,7 +148,6 @@ function Contact() {
 						href="https://github.com/sohechai"
 						target="_blank"
 						className={`text ${blured ? 'blur' : ''}`}
-						onClick={copyMail}
 						onMouseEnter={() => setBlured(true)}
 						onMouseLeave={() => setBlured(false)}
 					>

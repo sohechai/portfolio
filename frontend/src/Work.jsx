@@ -7,7 +7,7 @@ import gsap from 'gsap'
 
 function Work() {
 	useEffect(() => {
-		if (window.innerWidth > 768) {
+		if (window.innerWidth > 1300) {
 			let ctx = gsap.context(() => {
 				ScrollTrigger.create({
 					trigger: ".work-container",
@@ -15,7 +15,7 @@ function Work() {
 					end: "bottom bottom",
 					pin: '.right'
 				})
-				gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
+				gsap.set(".panel", { zIndex: (i, targets) => targets.length - i });
 
 				var images = gsap.utils.toArray('.panel:not(.purple)');
 
