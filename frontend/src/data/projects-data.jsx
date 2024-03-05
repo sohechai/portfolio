@@ -35,7 +35,7 @@ const projectsData = [
 		title: 'Portfolio v1',
 		tag: 'reactJS html scss',
 		description: 'My very first Portfolio. We all start somewhere !',
-		websiteUrl: 'https://sofiahechaichi.vercel.app/',
+		websiteUrl: 'https://sofiahechaichi-v1.vercel.app/',
 		githubUrl: 'https://github.com/sohechai/portfolio',
 		image: img_portfolio,
 		tags: 'Fullstack Developer, solo project, personal',
