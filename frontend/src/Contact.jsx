@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import './style/Contact.css'
 import { useEffect } from 'react'
 import { motion } from 'framer-motion';
-import resume from './data/Sofia_Hechaichi.pdf';
+import resume from './data/Sofia_hechaichi.pdf';
 
 function Contact() {
 	const [showCopied, setShowCopied] = useState(false);
