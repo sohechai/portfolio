@@ -13,13 +13,12 @@
 	font-style: normal;
 }
 
-
 * {
 	cursor: none !important;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "GeoSansLight", sans-serif;
+
 	color: var(--dark-bg-color);
 	scrollbar-width: none;
 	-ms-overflow-style: none;
@@ -28,6 +27,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: "GeoSansLight", sans-serif;
 }
 
 *::-webkit-scrollbar {
