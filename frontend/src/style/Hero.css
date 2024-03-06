@@ -14,10 +14,9 @@ div.mask {
 
 div.mask>h1 {
 	font-size: 16vw;
-	/* font-weight: 900; */
-	/* width: 100%; */
-	/* display: flex; */
-	/* justify-content: center; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .mask>p {
