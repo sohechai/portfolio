@@ -13,6 +13,9 @@
 	box-sizing: border-box;
 	/* font-family: "GeoSansLight", sans-serif; */
 	color: var(--dark-bg-color);
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	scroll-behavior: smooth;
@@ -20,9 +23,6 @@
 
 body {
 	overflow-x: hidden;
-	font-family: "PT Sans", sans-serif;
-	font-weight: 400;
-	font-style: normal;
 }
 
 *::-webkit-scrollbar {
