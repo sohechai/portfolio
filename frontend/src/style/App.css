@@ -6,6 +6,14 @@
 	--dark-grid-border-color: rgba(33, 35, 33, 0.5);
 }
 
+@font-face {
+	font-family: 'GeoSansLight';
+	src: url('./src/font/GeoSansLight.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 * {
 	cursor: none !important;
 	margin: 0;
@@ -13,7 +21,6 @@
 	box-sizing: border-box;
 	font-family: "GeoSansLight", sans-serif;
 	color: var(--dark-bg-color);
-
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	scroll-behavior: smooth;
