@@ -1,12 +1,9 @@
-'use client'
 import React, { useEffect, useRef } from 'react'
 import './style/About.css'
 import datas from './data/about-data.jsx'
 import AnimatedLetters from './components/AnimatedLetters'
 
 function About() {
-	const sectionRef = useRef(null);
-	const sectionContainerRef = useRef(null);
 	const sectionColsRef = useRef([]);
 
 	const isDesktop = window.matchMedia('(min-width: 768px)');
