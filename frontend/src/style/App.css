@@ -73,11 +73,11 @@ body:hover .outer-cursor {
 	right: 0;
 }
 .littleSquare {
-	width: 12px;
-	height: 12px;
-	border-radius: 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
 	background-color: black;
-	margin: 29px 29px 0 0;
+	margin: 27px 27px 0 0;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -205,7 +205,7 @@ div.logo>a {
 	transform: translate(-50%, -50%);
 	background-color: white;
 	mix-blend-mode: difference;
-	border-radius: 3px;
+	border-radius: 4px;
 	pointer-events: none;
 	transition: ease width 0.1s, height 0.1s;
 }
