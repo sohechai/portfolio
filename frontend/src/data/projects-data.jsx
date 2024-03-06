@@ -29,7 +29,7 @@ const projectsData = [
 		websiteUrl: '',
 		githubUrl: 'https://github.com/sohechai/Utils_Scripts_Py',
 		image: img_python_script,
-		tags: 'Developer, personal solo project, personal',
+		tags: 'Developer, solo project, personal',
 	},
 	{
 		title: 'Portfolio v1',
