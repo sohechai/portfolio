@@ -56,7 +56,6 @@ div.text-wrapper {
 
 .name {
 	letter-spacing: 4px;
-	font-weight: 900;
 	transform: translateY(100%);
 	animation-name: slideDown;
 	animation-duration: 1s;
