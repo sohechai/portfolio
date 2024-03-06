@@ -6,13 +6,6 @@
 	--dark-grid-border-color: rgba(33, 35, 33, 0.5);
 }
 
-@font-face {
-	font-family: 'GeoSansLight';
-	src: url('font/geo_sans_light/GeosansLight.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-}
-
 * {
 	cursor: none !important;
 	margin: 0;
@@ -27,7 +20,7 @@
 
 body {
 	overflow-x: hidden;
-	font-family: "GeoSansLight", sans-serif;
+	/* font-family: "GeoSansLight", sans-serif; */
 }
 
 *::-webkit-scrollbar {
