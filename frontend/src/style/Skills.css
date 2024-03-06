@@ -1,13 +1,17 @@
 .skills {
-	margin-bottom: 100vh;
+	margin-bottom: 200vh;
 	height: 200vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .skills-container {
 	width: 100vw;
 	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .skills-container>h1 {
@@ -20,7 +24,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	height: 100%;
+	/* height: 100%; */
 }
 
 .bottom-skills>h1 {

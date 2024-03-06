@@ -9,7 +9,7 @@ const PreLoader = () => {
 	const [index, setIndex] = useState(0);
 	const pathRef = useRef(null);
 	const initialCurve = 100;
-	const duration = 1000;
+	const duration = 600;
 	let start;
 
 	useEffect(() => {

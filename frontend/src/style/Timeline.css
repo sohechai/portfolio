@@ -6,21 +6,21 @@
 	--bg-tab-content: var(--bg-color);
 }
 
-.about-container {
-	height: 200vh;
+.timeline-container {
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: left;
 	flex-direction: column;
 }
 
-.about-header {
+.timeline-header {
 	line-height: 0.9;
 	border: 1px solid var(--dark-bg-color);
 	padding: 16px 0 16px 0;
 }
 
-.about-header>h1 {
+.timeline-header>h1 {
 	margin-left: 20px;
 	font-size: 10vw;
 }
@@ -138,11 +138,11 @@
 /* responsive */
 
 @media screen and (max-width: 768px) {
-	.about-container {
+	.timeline-container {
 		height: 100vh;
 	}
 
-	.about-header>h1 {
+	.timeline-header>h1 {
 		font-size: 20vw;
 	}
 

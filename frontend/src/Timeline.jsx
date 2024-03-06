@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import './style/About.css'
-import datas from './data/about-data.jsx'
-import AnimatedLetters from './components/AnimatedLetters'
+import './style/Timeline.css'
+import datas from './data/timeline-data.jsx'
+import AnimatedLetters from './components/AnimatedLetters.jsx'
 
-function About() {
+function Timeline() {
 	const sectionColsRef = useRef([]);
 
 	const isDesktop = window.matchMedia('(min-width: 768px)');
@@ -30,9 +30,9 @@ function About() {
 	}, [])
 
 	return (
-		<section className='about-container' id='about'>
+		<section className='timeline-container' id='Timeline'>
 			<div className="tab">
-				<div className="about-header">
+				<div className="timeline-header">
 					<AnimatedLetters targetDiv={<h1 className="r-text">TIMELINE</h1>} />
 				</div>
 				<div className="tab-content">
@@ -58,4 +58,4 @@ function About() {
 	)
 }
 
-export default About
+export default Timeline

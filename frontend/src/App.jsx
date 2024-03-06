@@ -9,7 +9,7 @@ import { gsap } from 'gsap'
 import Presentation from './presentation.jsx';
 import Work from './Work.jsx';
 import Magnetic from './components/Magnetic.jsx';
-import About from './About.jsx';
+import Timeline from './Timeline.jsx';
 import AnimatedLetters from './components/AnimatedLetters.jsx';
 import LoadingPage from './PreLoader.jsx';
 
@@ -119,7 +119,6 @@ function App() {
 					</a>
 				</div>
 				<div className="square">
-					{/* <span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span> */}
 					<span className='littleSquare'></span>
 				</div>
 			</div>
@@ -164,12 +163,11 @@ function App() {
 				}} />
 			<Hero />
 			<Presentation />
-			<About />
+			<Timeline />
 			<div className='work-header' id='work'>
 				<AnimatedLetters targetDiv={<h1>PROJECTS</h1>} />
 			</div>
 			<Work />
-			<section></section>
 			<Skills />
 			<Contact />
 		</div >
