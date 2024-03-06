@@ -104,7 +104,7 @@ function App() {
 		setHoveredSquare(null);
 	};
 
-	useEffect(() => {}, [hoveredLink]);
+	useEffect(() => { }, [hoveredLink]);
 
 	return (
 		<div id="parent-container" className='container' onMouseMove={mouseMove}>
@@ -119,9 +119,8 @@ function App() {
 					</a>
 				</div>
 				<div className="square">
-					<Magnetic>
-						<span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span>
-					</Magnetic>
+					{/* <span className='boundsSquare' ref={squareRef} onMouseOver={() => handleMouseOver(squareRef)} onMouseOut={handleMouseOutSquare}></span> */}
+					<span className='littleSquare'></span>
 				</div>
 			</div>
 			<div className="menu-container">
