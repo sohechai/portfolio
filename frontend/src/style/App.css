@@ -157,7 +157,7 @@ div.logo>a {
 	transform: translateX(-50%);
 	justify-content: center;
 	background: rgba(22, 22, 22, 0.55);
-	backdrop-filter: blur(2.5px);
+	/* backdrop-filter: blur(2.5px); */
 	/* -webkit-backdrop-filter: blur(2.5px); */
 	border-radius: 10px;
 	color: var(--dark-bg-color);
