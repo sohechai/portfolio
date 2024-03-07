@@ -126,10 +126,10 @@ function App() {
 				<div className="bounce" ref={boundRef}>
 					<div className="menus">
 
-						<a href='#about' id='mix'>
+						<a href='#timeline' id='mix'>
 							<Magnetic>
 								<span className='bounds' ref={aboutRef} onMouseOver={() => handleMouseOver(aboutRef)} onMouseOut={handleMouseOut}></span>
-								ABOUT
+								TIMELINE
 							</Magnetic>
 						</a>
 						<a href='#work' id='mix' >
