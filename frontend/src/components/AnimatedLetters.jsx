@@ -35,7 +35,7 @@ function AnimatedLetters({ targetDiv }) {
 					repeatRefresh: true,
 					opacity: 1,
 					repeatDelay: 0.03,
-					delay: (index + 1) * 0.22,
+					delay: (index + 1) * 0.15,
 					onComplete: () => gsap.set(char, { innerHTML: initialHTML, delay: 0.03 }),
 					scrollTrigger: {
 						trigger: title,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import iconArrow from '../images/arrow.png';
 const WorkSection = ({ number, title, description, stack, websiteUrl, githubUrl, tags, hasGithubLink, hasWebsiteLink, img }) => {
-	const splitstack = stack.split(" ");
+	const splitstack = stack.split(",");
 	const splitTags = tags.split(",");
 	const [size, setSize] = useState(false);
 

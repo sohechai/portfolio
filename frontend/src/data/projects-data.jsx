@@ -6,7 +6,7 @@ import img_portfolio from '../images/portfolio-screen.png';
 const projectsData = [
 	{
 		title: 'Cub3D',
-		tag: 'C minilibX',
+		tag: 'C,minilibX',
 		description: 'Inspired by the game Wolfenstein 3D, Cub3D is a realistic 3D labyrinth using ray-casting.',
 		websiteUrl: '',
 		githubUrl: 'https://github.com/sohechai/cub3D',
@@ -15,7 +15,7 @@ const projectsData = [
 	},
 	{
 		title: 'Transcendance',
-		tag: 'React NestJS TypeScript',
+		tag: 'React,Redux,Styled Component,NestJS,TypeScript',
 		description: 'Full-stack Pong game website with an integrated text chat feature.',
 		websiteUrl: '',
 		githubUrl: '',
@@ -33,7 +33,7 @@ const projectsData = [
 	},
 	{
 		title: 'Portfolio v1',
-		tag: 'reactJS html scss',
+		tag: 'reactJS,html,scss',
 		description: 'My very first Portfolio. We all start somewhere !',
 		websiteUrl: 'https://sofiahechaichi-v1.vercel.app/',
 		githubUrl: 'https://github.com/sohechai/portfolio',

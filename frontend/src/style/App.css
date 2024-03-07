@@ -242,8 +242,19 @@ div.logo>a {
 		display: none;
 	}
 
-	* {
+	.menus > a{
 		cursor: pointer;
+		pointer-events: all;
+
+		&:hover {
+			background-color: black;
+			border-radius: 10px;
+			color: white;
+		}
+	}
+
+	* {
+		cursor: default;
 	}
 	
 }
