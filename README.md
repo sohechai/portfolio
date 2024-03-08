@@ -4,7 +4,6 @@ This project is my second iteration of my personal portfolio, built with ReactJS
 
 ## Table of Contents
 - [Overview](#overview)
-- [Features](#features)
 - [Preview](#preview)
 - [Link](#link)
 
