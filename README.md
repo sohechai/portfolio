@@ -15,13 +15,13 @@ Welcome to my personnal portfolio, an enhanced representation of my personal jou
 
 ## Preview
 
-![Portfolio Version 2](screenshot.png)
+![Portfolio Version 2](./frontend/src/images/portfolio_v2.png)
 
 ## Link
 
 Explore my portfolio by visiting the live site:
 
-[Portfolio Version 2](https://yourportfoliolink.com)
+[Portfolio Version 2](https://sofia-hechaichi.com/)
 
 Feel free to check out my work and get in touch if you have any inquiries or feedback. Thank you for your interest!
 
