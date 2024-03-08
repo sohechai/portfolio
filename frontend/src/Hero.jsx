@@ -46,7 +46,7 @@ function Hero() {
 		<section className='hero-container' id='home'>
 			<div className="mask">
 				<p>fullstack developer <br />+ UI/UX designer</p>
-				<h1 className='name' id='highlight'>SOFIA</h1>
+				<h1 className='r-text' id='highlight'>SOFIA</h1>
 			</div>
 			<div className="text-wrapper">
 				<p className='title'>passionate coder</p>

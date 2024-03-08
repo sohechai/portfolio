@@ -33,7 +33,8 @@ function Timeline() {
 		<section className='timeline-container' id='timeline'>
 			<div className="tab">
 				<div className="timeline-header">
-					<AnimatedLetters targetDiv={<h1 className="r-text">TIMELINE</h1>} />
+					{/* <AnimatedLetters targetDiv={<h1 className="r-text">TIMELINE</h1>} /> */}
+					<h1 className="r-text">TIMELINE</h1>
 				</div>
 				<div className="tab-content">
 					{

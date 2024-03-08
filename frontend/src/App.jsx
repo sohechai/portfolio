@@ -165,7 +165,8 @@ function App() {
 			<Presentation />
 			<Timeline />
 			<div className='work-header' id='work'>
-				<AnimatedLetters targetDiv={<h1>PROJECTS</h1>} />
+				{/* <AnimatedLetters targetDiv={<h1>PROJECTS</h1>} /> */}
+				<h1 className="r-text">PROJECTS</h1>
 			</div>
 			<Work />
 			<Skills />

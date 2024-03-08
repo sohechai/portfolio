@@ -26,7 +26,8 @@ function Skills() {
 		<section className='skills' id='skills'>
 			<div className="skills-container">
 				<div className="skills-header">
-					<AnimatedLetters targetDiv={<h1>SKILLS</h1>} />
+					{/* <AnimatedLetters targetDiv={<h1>SKILLS</h1>} /> */}
+					<h1 className="r-text">SKILLS</h1>
 				</div>
 				<div className="row" >
 					<div className="item-menu">
@@ -159,7 +160,8 @@ function Skills() {
 			</div>
 			<div className='bottom-skills' >
 				<span id='contact'></span>
-				<AnimatedLetters targetDiv={<h1 id='contact'>LET'S TALK</h1>} />
+				{/* <AnimatedLetters targetDiv={<h1 id='contact'>LET'S TALK</h1>} /> */}
+				<h1 className="r-text" id='contact'>LET'S TALK</h1>
 			</div>
 		</section >
 	)
