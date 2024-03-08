@@ -1,6 +1,6 @@
 # Portfolio V2
 
-This project is my second iteration of my personal portfolio, built with ReactJS and GSAP to create an immersive and interactive user experience.
+This project is my second iteration of my personal portfolio, built with ReactJS, GSAP and freamer-motion.
 
 ## Table of Contents
 - [Overview](#overview)
