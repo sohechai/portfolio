@@ -61,6 +61,8 @@
 .marquee {
 	position: absolute;
 	opacity: 0;
+	/* transform: translateY(200%);
+	transition: transform 0.5s ease-in-out; */
 }
 
 .row:hover .marquee {
@@ -73,7 +75,7 @@
 	height: 100%;
 	background: #000000;
 	opacity: 1;
-	transform: translateY(0);
+	/* transform: translateY(0); */
 	white-space: nowrap;
 }
 

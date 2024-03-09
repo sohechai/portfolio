@@ -65,7 +65,7 @@ const PreLoader = () => {
 		<div ref={loadingRef} className="introduction">
 			<svg>
 				<path ref={pathRef}></path>
-				<text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="white" fontSize="42">{words[index]}</text>
+				<text x="50%" y="40%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="42">{words[index]}</text>
 			</svg>
 		</div>
 	);

@@ -23,9 +23,9 @@ function Skills() {
 
 
 	return (
-		<section className='skills' id='skills'>
+		<section className='skills' >
 			<div className="skills-container">
-				<div className="skills-header">
+				<div className="skills-header" id='skills'>
 					{/* <AnimatedLetters targetDiv={<h1>SKILLS</h1>} /> */}
 					<h1 className="r-text">SKILLS</h1>
 				</div>
@@ -33,7 +33,7 @@ function Skills() {
 					<div className="item-menu">
 						<span className='numerotation'>(01)</span>PROGRAMMING LANGUAGES
 					</div>
-					<div className='marquee'  >
+					<div className='marquee' >
 						<div className="marquee-inner-wrap">
 							<div className="marquee-inner-long">
 								<span>C/C++</span>

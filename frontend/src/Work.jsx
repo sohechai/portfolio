@@ -1,53 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './style/Work.css'
 import WorkSection from './components/WorkComponant.jsx'
 import data from './data/projects-data.jsx'
 import { ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
+import { useScroll, useTransform, motion } from 'framer-motion'
 
 function Work() {
-	useEffect(() => {
-		if (window.innerWidth > 1300) {
-			let ctx = gsap.context(() => {
-				ScrollTrigger.create({
-					trigger: ".work-container",
-					start: "top top",
-					end: "bottom bottom",
-					pin: '.right'
-				})
-				gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
+	const carousselRef = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: carousselRef,
+	});
 
-				var images = gsap.utils.toArray('.panel:not(.purple)');
-
-				images.forEach((image, i) => {
-
-					var tl = gsap.timeline({
-
-						scrollTrigger: {
-							trigger: ".work-container",
-							start: () => "top -" + (window.innerHeight * (i)),
-							end: () => "+=" + window.innerHeight,
-							scrub: true,
-							toggleActions: "play none reverse none",
-							invalidateOnRefresh: true
-						}
-
-					})
-
-					tl
-						.to(image, { height: 0 })
-						;
-
-				});
-			})
-
-			return () => ctx.revert();
-		}
-	}, [])
+	const x = useTransform(scrollYProgress, [0, 1], ['1%', '-80%']);
 
 	return (
-		<section className='work-container'>
-			<div className="left">
+		<section className='work-container' ref={carousselRef} >
+			<motion.div style={{ x }}className="horizontal-caroussel">
 				{
 					data.map((project, index) => (
 						<WorkSection
@@ -59,6 +28,7 @@ function Work() {
 							websiteUrl={project.websiteUrl}
 							githubUrl={project.githubUrl}
 							image={project.image}
+							video={project.video}
 							tags={project.tags}
 							hasGithubLink={project.githubUrl ? true : false}
 							hasWebsiteLink={project.websiteUrl ? true : false}
@@ -66,15 +36,7 @@ function Work() {
 						/>
 					))
 				}
-			</div>
-			<div className="right">
-				<div className="work-right-component">
-					<div className="panel blue"></div>
-					<div className="panel red"></div>
-					<div className="panel orange"></div>
-					<div className="panel purple"></div>
-				</div>
-			</div>
+			</motion.div>
 		</section>
 	)
 }
