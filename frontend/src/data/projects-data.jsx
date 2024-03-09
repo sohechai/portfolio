@@ -25,7 +25,7 @@ const projectsData = [
 		websiteUrl: '',
 		githubUrl: '',
 		image: img_transcendance,
-		tags: 'Full-stack Developer, chat feature, 4 people team, school',
+		tags: 'Full-stack chat feature, 4 people team, school',
 	},
 	{
 		title: 'Cub3D',

@@ -158,7 +158,7 @@ div.logo>a {
 	height: 50px;
 	transform: translateX(-50%);
 	justify-content: center;
-	background: rgba(22, 22, 22, 0.55);
+	background: rgba(22, 22, 22, 0.15);
 	/* backdrop-filter: blur(2.5px); */
 	/* -webkit-backdrop-filter: blur(2.5px); */
 	border-radius: 10px;
