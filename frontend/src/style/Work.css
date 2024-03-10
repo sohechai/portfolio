@@ -134,13 +134,14 @@
 	}
 
 	&:hover {
+		background-color: #D4EDB7;
+		color: black;
+
 		>svg {
 			transform: rotate(45deg);
 			fill: black;
 		}
 
-		background-color: white;
-		color: black;
 	}
 }
 

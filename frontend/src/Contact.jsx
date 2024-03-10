@@ -128,7 +128,7 @@ function Contact() {
 									cx={`${mousePosition.x}px`}
 									cy={`${mousePosition.y}px`}
 									r="14"
-									fill="#E8EDDF"
+									fill="#D4EDB7"
 								/>
 							</g>
 						</svg>
