@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './style/PreLoader.css';
-import { motion } from 'framer-motion';
 
 const words = ["Hello,", "welcome", "to", "my", "portfolio", "👋"];
 

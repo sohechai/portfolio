@@ -91,13 +91,13 @@
 	flex-direction: inline;
 	width: 100%;
 	height: auto;
-	
+
 	>p {
 		width: fit-content;
 		font-size: 14px;
 		padding: 2px 8px;
 		margin: 0 2px 2px 0;
-		border: 0.5px solid var(--bg-color);
+		border: 0.5px solid rgba(232, 237, 223, 0.5);
 		border-radius: 4px;
 		color: var(--bg-color);
 	}
@@ -120,35 +120,69 @@
 .button-container {
 	margin: 16px 0 16px 0;
 	width: 100%;
+	display: flex;
+	/* gap: 16px; */
+}
+
+.button-content {
+	/* background-color: red; */
+	display: flex;
+	/* flex-direction: row; */
+	/* gap: 16px; */
+	width: 140px;
+	height: 32px;
 }
 
 .project-button {
 	position: relative;
-	border: none;
-	margin-right: 16px;
+	border: 0.5px solid rgba(232, 237, 223, 0.5);
+	padding: 8px 16px 8px 16px;
+	border-radius: 16px;
+	/* margin-right: 16px; */
 	color: var(--bg-color);
+	font-size: 12px;
+	text-transform: uppercase;
+	/* background-color: red; */
 
-	>img {
+	>svg {
+		transition: transform 0.3s ease, fill 0.3s ease;
 		margin-left: 8px;
-		height: 8px;
-		color: var(--bg-color);
+		fill: var(--bg-color)
+	}
+
+	&:hover {
+		>svg {
+			transform: rotate(45deg);
+			fill: black;
+		}
+
+		background-color: white;
+
+		/* border: none; */
+		color: black;
 	}
 }
 
+.project-button::before {
+	/* content: '';
+	color: var(--dark-bg-color);
+	width: 5px;
+	height: 5px; */
+}
+
 .project-button::after {
-	content: "";
+	/* content: "";
 	position: absolute;
 	bottom: -4px;
 	right: 0;
 	width: 0;
 	height: 2px;
 	background: var(--bg-color);
-	transition: width 0.3s ease-in-out;
+	transition: width 0.3s ease-in-out; */
 }
 
-.project-button:hover::after {
-	width: 100%;
-	left: 0;
+.project-button:hover {
+	/* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 @media (max-width: 768px) {
