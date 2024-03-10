@@ -20,16 +20,12 @@
 	padding: 16px 0 16px 0;
 }
 
-.timeline-header>h1 {
-	margin-left: 20px;
-	font-size: 10vw;
-}
-
 .r-text {
 	margin-left: 20px;
 	font-size: 10vw;
-	/* font-weight: bold; */
 	opacity: 1;
+	line-height: 0.9;
+	letter-spacing: -8px;
 }
 
 .tab {
@@ -142,14 +138,6 @@
 		height: 100vh;
 	}
 
-	.timeline-header>h1 {
-		font-size: 20vw;
-	}
-
-	.r-text {
-		font-size: 20vw;
-	}
-
 	.tab-content {
 		display: flex;
 		flex-direction: column;
@@ -169,7 +157,7 @@
 		flex: 1;
 		height: 100%;
 		align-items: flex-start;
-		justify-content: center;
+		justify-content: center;		
 	}
 
 	.section-col-title>h2 {
@@ -178,8 +166,13 @@
 
 	.section-col-year {
 		flex: 0.7;
-		height: 100%;
-		margin: auto;
+		height: 100px;
+		display: flex;
+		align-items: center;
+	}
+
+	.section-col-year > h1 {
+		margin: 0px;
 	}
 
 	.section-col-description {
@@ -210,5 +203,10 @@
 	.section-col-image img {
 		object-fit: cover;
 		object-fit: left bottom;
+	}
+
+	.r-text {
+		letter-spacing: -4px;
+		font-size: 16vw;
 	}
 }

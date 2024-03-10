@@ -54,7 +54,6 @@ function Timeline() {
 					}
 				</div>
 			</div>
-
 		</section>
 	)
 }

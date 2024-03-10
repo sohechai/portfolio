@@ -3,6 +3,7 @@
 	height: 200vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -14,22 +15,15 @@
 	justify-content: center;
 }
 
+.skills-header {
+	line-height: 0.9;
+	box-shadow: 0 -1px var(--dark-grid-border-color);
+	padding: 16px 0 16px 0;
+}
+
 .skills-container>h1 {
 	margin-left: 20px;
 	font-size: 10vw;
-}
-
-.bottom-skills {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	/* height: 100%; */
-}
-
-.bottom-skills>h1 {
-	font-size: 10vw;
-	line-height: 0.9;
 }
 
 .row {
@@ -87,7 +81,6 @@
 	white-space: no-wrap;
 }
 
-
 .marquee-inner {
 	height: 100%;
 	width: fit-content;
@@ -97,7 +90,6 @@
 	animation: marquee 5s linear infinite;
 	overflow: hidden;
 }
-
 
 .marquee-inner-long {
 	height: 100%;
