@@ -4,7 +4,9 @@ import WorkSection from './components/WorkComponant.jsx'
 import data from './data/projects-data.jsx'
 import { ScrollTrigger } from 'gsap/all'
 import gsap from 'gsap'
-import { useScroll, useTransform, motion } from 'framer-motion'
+import { useScroll, useTransform, motion, easeInOut } from 'framer-motion'
+import { cubicBezier, circOut } from "framer-motion"
+
 
 function Work() {
 	const carousselRef = useRef(null);
@@ -12,11 +14,16 @@ function Work() {
 		target: carousselRef,
 	});
 
-	const x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
+
+	let x = useTransform(scrollYProgress, [0, 1], ['0%', '-80%']);
 
 	return (
 		<section className='work-container' ref={carousselRef} >
-			<motion.div style={{ x }}className="horizontal-caroussel">
+			<motion.div
+				style={{ x }}
+				transition={{ type: 'spring', mass: 0.5 }}
+				className="horizontal-caroussel"
+			>
 				{
 					data.map((project, index) => (
 						<WorkSection

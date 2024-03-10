@@ -52,7 +52,7 @@ const projectsData = [
 		websiteUrl: 'https://sofiahechaichi-v1.vercel.app/',
 		githubUrl: 'https://github.com/sohechai/portfolio',
 		video: vid_portfolio,
-		tags: 'Frontend Developer, solo project, personal',
+		tags: 'Frontend, solo project, personal',
 	},
 ];
 
