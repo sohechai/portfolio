@@ -1,5 +1,5 @@
 .work-container {
-	position: relative;
+	/* position: relative; */
 	height: 600vh;
 	justify-content: left;
 	align-items: start;
@@ -146,7 +146,7 @@
 }
 
 @media (max-width: 768px) {
-	.work-container {
+	/* .work-container {
 		height: 300vh;
-	}
+	} */
 }

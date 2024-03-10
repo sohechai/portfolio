@@ -1,7 +1,7 @@
 .hero-container {
 	display: grid;
 	place-content: center;
-	background: #E8EDDF;
+	/* background: #E8EDDF; */
 }
 
 div.mask {
@@ -54,7 +54,7 @@ div.text-wrapper {
 }
 
 .name {
-	letter-spacing: 4px;
+	letter-spacing: -8px;
 	transform: translateY(100%);
 	animation-name: slideDown;
 	animation-duration: 1s;
