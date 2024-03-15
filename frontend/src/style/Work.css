@@ -1,6 +1,6 @@
 .work-container {
 	/* position: relative; */
-	height: 600vh;
+	height: 300vh;
 	justify-content: left;
 	align-items: start;
 	background-color: var(--dark-bg-color);
