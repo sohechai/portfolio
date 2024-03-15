@@ -1,61 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/logo.png" />
+        <link
+            rel="preload"
+            href="/font/GeosansLight.woff2"
+            as="font"
+            type="font/woff2"
+        />
+        <link rel="stylesheet" href="/path/to/your/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sofia Hechaichi</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+        <script>
+            const lenis = new Lenis({
+                lerp: 0.09,
+                wheelMultiplier: 1,
+            });
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" href="/logo.png" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sofia Hechaichi</title>
-</head>
-
-<style>
-	@font-face {
-		font-family: 'GeoSansLight';
-		src: url('/font/GeosansLight.woff2') format('woff2');
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	html.lenis {
-		height: auto;
-	}
-
-	.lenis.lenis-smooth {
-		scroll-behavior: auto;
-	}
-
-	.lenis.lenis-smooth [data-lenis-prevent] {
-		overscroll-behavior: contain;
-	}
-
-	.lenis.lenis-stopped {
-		overflow: hidden;
-	}
-</style>
-
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
-
-<script>
-
-	const lenis = new Lenis({
-		lerp: 0.09,
-		wheelMultiplier: 1,
-	});
-
-	function raf(time) {
-		lenis.raf(time);
-		requestAnimationFrame(raf);
-	}
-	requestAnimationFrame(raf);
-
-</script>
-
-<body>
-	<div id="root"></div>
-	<script type="module" src="/src/main.jsx"></script>
-</body>
-
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        </script>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
