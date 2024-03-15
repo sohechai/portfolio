@@ -1,80 +1,78 @@
 .hero-container {
-	display: grid;
-	place-content: center;
-	/* background: #E8EDDF; */
+    display: grid;
+    place-content: center;
 }
 
 div.mask {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-div.mask>h1 {
-	font-size: 16vw;
-	width: 100%;
-	display: flex;
-	justify-content: center;
+div.mask > h1 {
+    font-size: 16vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.mask>p {
-	color: rgba(1, 1, 1, 0.4);
-	text-align: center;
-	font-size: 24px;
-	width: fit-content;
-	padding: 8px 20px 8px 20px;
+.mask > p {
+    color: rgba(1, 1, 1, 0.4);
+    text-align: center;
+    font-size: 24px;
+    width: fit-content;
+    padding: 8px 20px 8px 20px;
 }
 
 div.text-wrapper {
-	position: relative;
-	height: 5vw;
-	width: 100%;
-	overflow: hidden;
+    position: relative;
+    height: 5vw;
+    width: 100%;
+    overflow: hidden;
 }
 
-.text-wrapper>p {
-	position: absolute;
-	overflow: hidden;
+.text-wrapper > p {
+    position: absolute;
+    overflow: hidden;
 }
 
 .title {
-	font-size: 2vw;
-	text-transform: uppercase;
+    font-size: 2vw;
+    text-transform: uppercase;
 }
 
-.title>span {
-	display: inline-block;
+.title > span {
+    display: inline-block;
 }
 
 .fixed-title {
-	text-transform: uppercase;
-
+    text-transform: uppercase;
 }
 
 .name {
-	letter-spacing: -8px;
-	transform: translateY(100%);
-	animation-name: slideDown;
-	animation-duration: 1s;
-	animation-delay: 3s;
-	animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-	animation-fill-mode: forwards;
+    letter-spacing: -8px;
+    transform: translateY(100%);
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
 }
 
 @keyframes slideDown {
-	to {
-		transform: translateY(0);
-	}
+    to {
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 768px) {
-	.title {
-		font-size: 5vw;
-	}
+    .title {
+        font-size: 5vw;
+    }
 
-	div.mask>h1 {
-		font-size: 32vw;
-	}
+    div.mask > h1 {
+        font-size: 32vw;
+    }
 }
