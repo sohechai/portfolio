@@ -100,8 +100,6 @@
 .image > img {
     width: 100%;
     height: auto;
-    /* aspect-ratio: auto 640 / 360; */
-    height: auto;
 }
 
 .image > video {
