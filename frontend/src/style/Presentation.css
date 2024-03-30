@@ -1,38 +1,38 @@
 .presentation-container {
-	overflow: hidden;
-	height: 150vh;
-	width: 92vw;
-	margin: auto;
+    overflow: hidden;
+    height: 150vh;
+    width: 92vw;
+    margin: auto;
 }
 
 .presentation-text {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 92vw;
-	height: 50rem;
-	border-radius: 8px;
-	overflow: hidden;
-	background-image: url('../images/text-bg.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92vw;
+    height: 50rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url("../images/text-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .parallax-text {
-	text-transform: uppercase;
-	height: fit-content;
-	font-size: 4vw;
-	width: 80vw;
-	padding: 4vw;
-	color: white;
-	transform: translateY(50px);
-	font-weight: 900;
-	text-align: center;
+    text-transform: uppercase;
+    height: fit-content;
+    font-size: 4vw;
+    width: 80vw;
+    padding: 4vw;
+    color: white;
+    transform: translateY(50px);
+    font-weight: 900;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
-	.parallax-text {
-		font-size: 6vw;
-	}
+    .parallax-text {
+        font-size: 6vw;
+    }
 }
