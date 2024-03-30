@@ -5,12 +5,10 @@ import Contact from "./Contact.jsx";
 import { useEffect } from "react";
 import "./style/App.css";
 import { motion, useMotionValue } from "framer-motion";
-import { gsap } from "gsap";
 import Presentation from "./presentation.jsx";
 import Work from "./Work.jsx";
 import Magnetic from "./components/Magnetic.jsx";
 import Timeline from "./Timeline.jsx";
-import AnimatedLetters from "./components/AnimatedLetters.jsx";
 import LoadingPage from "./PreLoader.jsx";
 
 function App() {
