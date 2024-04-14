@@ -9,12 +9,12 @@ import vid_muse from "../videos/muse-video.mp4";
 const projectsData = [
   {
     title: "Muse Coffee Shop",
-    tag: "React,Typescript,framer-motion",
+    tag: "React,Typescript,Framer-motion",
     description: "A showcase website for a fictional café : Muse Coffee Shop.",
     websiteUrl: "https://muse-cafe.vercel.app/",
     githubUrl: "https://github.com/sohechai/muse_cafe",
     video: vid_muse,
-    tags: "Developer, solo project",
+    tags: "developer,designer,solo project",
   },
   {
     title: "Portfolio",
@@ -23,7 +23,7 @@ const projectsData = [
     websiteUrl: "https://sofia-hechaichi.com/",
     githubUrl: "https://github.com/sohechai/portfolio_v2",
     image: img_portfolio,
-    tags: "Developer, solo project",
+    tags: "developer,designer,solo project",
   },
   {
     title: "Transcendance",
@@ -33,7 +33,7 @@ const projectsData = [
     websiteUrl: "",
     githubUrl: "",
     image: img_transcendance,
-    tags: "Full-stack chat feature, 4 people team, school",
+    tags: "full-stack chat feature, 4 people team, school",
   },
   {
     title: "3D Portal Scene",
@@ -43,7 +43,7 @@ const projectsData = [
     websiteUrl: "https://portal-sh.vercel.app/",
     githubUrl: "",
     video: vid_portal,
-    tags: "Developer, solo project, educational",
+    tags: "developer,solo project, educational",
   },
   {
     title: "Cub3D",
@@ -53,7 +53,7 @@ const projectsData = [
     websiteUrl: "",
     githubUrl: "https://github.com/sohechai/cub3D",
     video: vid_cub3d,
-    tags: "Game Developer, solo project, school",
+    tags: "game Developer, solo project, school",
   },
   {
     title: "Python Script",
@@ -62,7 +62,7 @@ const projectsData = [
     websiteUrl: "",
     githubUrl: "https://github.com/sohechai/Utils_Scripts_Py",
     video: vid_python_script,
-    tags: "Developer, solo project, personal",
+    tags: "developer, solo project, personal",
   },
   {
     title: "Portfolio v1",
@@ -71,7 +71,7 @@ const projectsData = [
     websiteUrl: "https://sofiahechaichi-v1.vercel.app/",
     githubUrl: "https://github.com/sohechai/portfolio",
     video: vid_portfolio,
-    tags: "Frontend, solo project, personal",
+    tags: "frontend, solo project, personal",
   },
 ];
 
