@@ -1,19 +1,29 @@
 import img_transcendance from "../images/transcendance-screen.webp";
+import img_portfolio from "../images/portfolio_v2.webp";
 import vid_portal from "../videos/portal-scene-video.mp4";
 import vid_portfolio from "../videos/portfolio-v1-video.mp4";
 import vid_python_script from "../videos/python-script-video.mp4";
 import vid_cub3d from "../videos/cub3d-video.mp4";
+import vid_muse from "../videos/muse-video.mp4";
 
 const projectsData = [
   {
-    title: "3D Portal Scene",
-    tag: "threeJS,Blender",
-    description:
-      "A portal scene created during my ThreeJS training: ThreeJS Journey by Bruno Simon.",
-    websiteUrl: "https://portal-sh.vercel.app/",
-    githubUrl: "",
-    video: vid_portal,
-    tags: "Developer, solo project, educational",
+    title: "Muse Coffee Shop",
+    tag: "React,Typescript,framer-motion",
+    description: "A showcase website for a fictional café : Muse Coffee Shop.",
+    websiteUrl: "https://muse-cafe.vercel.app/",
+    githubUrl: "https://github.com/sohechai/muse_cafe",
+    video: vid_muse,
+    tags: "Developer, solo project",
+  },
+  {
+    title: "Portfolio",
+    tag: "React,framer-motion,gsap,TypeScript",
+    description: "My actual Portfolio to showcase my projects.",
+    websiteUrl: "https://sofia-hechaichi.com/",
+    githubUrl: "https://github.com/sohechai/portfolio_v2",
+    image: img_portfolio,
+    tags: "Developer, solo project",
   },
   {
     title: "Transcendance",
@@ -24,6 +34,16 @@ const projectsData = [
     githubUrl: "",
     image: img_transcendance,
     tags: "Full-stack chat feature, 4 people team, school",
+  },
+  {
+    title: "3D Portal Scene",
+    tag: "threeJS,Blender",
+    description:
+      "A portal scene created during my ThreeJS training: ThreeJS Journey by Bruno Simon.",
+    websiteUrl: "https://portal-sh.vercel.app/",
+    githubUrl: "",
+    video: vid_portal,
+    tags: "Developer, solo project, educational",
   },
   {
     title: "Cub3D",
