@@ -64,15 +64,6 @@ const projectsData = [
     video: vid_python_script,
     tags: "developer, solo project, personal",
   },
-  {
-    title: "Portfolio v1",
-    tag: "reactJS,html,scss",
-    description: "My very first Portfolio. We all start somewhere !",
-    websiteUrl: "https://sofiahechaichi-v1.vercel.app/",
-    githubUrl: "https://github.com/sohechai/portfolio_archive_v1",
-    video: vid_portfolio,
-    tags: "frontend, solo project, personal",
-  },
 ];
 
 export default projectsData;
