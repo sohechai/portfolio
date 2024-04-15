@@ -10,7 +10,7 @@ function Work() {
     target: carousselRef,
   });
 
-  let x = useTransform(scrollYProgress, [0, 1], ["0%", "-86%"]);
+  let x = useTransform(scrollYProgress, [0, 1], ["0%", "-83%"]);
 
   return (
     <section className="work-container" ref={carousselRef}>
