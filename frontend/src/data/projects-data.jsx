@@ -9,7 +9,7 @@ import vid_muse from "../videos/muse-video.mp4";
 const projectsData = [
   {
     title: "Muse Coffee Shop",
-    tag: "React,Typescript,Framer-motion",
+    tag: "React,Typescript,Framer-motion,Figma",
     description: "A showcase website for a fictional café : Muse Coffee Shop.",
     websiteUrl: "https://muse-cafe.vercel.app/",
     githubUrl: "https://github.com/sohechai/muse_cafe",
